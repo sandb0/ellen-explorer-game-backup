@@ -1,5 +1,7 @@
-﻿using UnityEngine.SceneManagement;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEditor;
+using UnityEditor.SceneManagement;
 using NUnit.Framework;
 using System.Collections.Generic;
 
@@ -24,7 +26,7 @@ namespace EllenExplorer.Editor.Scenes.Tests {
         }
 
         [OneTimeTearDown]
-        public void CleanupInactiveScenesInBuildSettings() {
+        public void Cleanup_Deleted_Scenes_In_BuildSettings() {
             // Some tests create temporary scenes and add it on build settings. Need be to remove.
 
             // Remove inactive scenes from build settings: Update Build Settings.
@@ -47,21 +49,21 @@ namespace EllenExplorer.Editor.Scenes.Tests {
         }
 
         [Test, Order(0)]
-        public void ShouldShowNewSceneMenuItemWindow() {
+        public void Should_Show_NewScene_MenuItemWindow() {
             bool isExecuted = EditorApplication.ExecuteMenuItem("Ellen Explorer/New Scene");
 
             Assert.IsTrue(isExecuted);
         }
 
         [Test, Order(1)]
-        public void ShouldCreateNewSceneAsset() {
+        public void Should_Create_NewScene_Asset() {
             scene = NewScene.Instance.CreateScene("__SceneForUnitTests__", defaultSceneAssetTemplatePath);
             
             Assert.IsTrue(scene.IsValid());
         }
 
         [Test, Order(2)]
-        public void ShouldAddNewSceneToBuildSettings() {
+        public void Should_Add_Scene_To_BuildSettings() {
             scene = NewScene.Instance.CreateScene("__SceneForUnitTests__", defaultSceneAssetTemplatePath);
             
             NewScene.Instance.AddSceneToBuildSettings(scene);
