@@ -1,14 +1,12 @@
-﻿using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine.SceneManagement;
 using UnityEditor;
-using UnityEditor.SceneManagement;
 using NUnit.Framework;
 using System.Collections.Generic;
 
 namespace EllenExplorer.Editor.Scenes.Tests {
     public class NewSceneEditorTest {
-        // This test depends on `DefaultTemplate` scene asset.
-        private string defaultSceneAssetTemplatePath = "Assets/Game/Scenes/Templates/__SceneForUnitTests__.unity";
+        // This test depends on `__DO_NOT_DELETE__` scene asset.
+        private string defaultSceneAssetTemplatePath = "Assets/Game/Scenes/Templates/__DO_NOT_DELETE__.unity";
 
         private Scene scene;
         
