@@ -3,8 +3,8 @@ using UnityEditor;
 using NUnit.Framework;
 using System.Collections.Generic;
 
-namespace EllenExplorer.Editor.Scenes.Tests {
-    public class NewSceneEditorTest {
+namespace EllenExplorer.Tools.Scenes.Tests {
+    public class NewSceneTest {
         // This test depends on `__DO_NOT_DELETE__` scene asset.
         private string defaultSceneAssetTemplatePath = "Assets/Game/Scenes/Templates/__DO_NOT_DELETE__.unity";
 
@@ -46,21 +46,21 @@ namespace EllenExplorer.Editor.Scenes.Tests {
             EditorBuildSettings.scenes = newScenes;
         }
 
-        [Test, Order(0)]
+        [Test]
         public void Should_Show_NewScene_MenuItemWindow() {
             bool isExecuted = EditorApplication.ExecuteMenuItem("Ellen Explorer/New Scene");
 
             Assert.IsTrue(isExecuted);
         }
 
-        [Test, Order(1)]
-        public void Should_Create_NewScene_Asset() {
+        [Test]
+        public void Should_Create_New_Scene_Asset() {
             scene = NewScene.Instance.CreateScene("__SceneForUnitTests__", defaultSceneAssetTemplatePath);
             
             Assert.IsTrue(scene.IsValid());
         }
 
-        [Test, Order(2)]
+        [Test]
         public void Should_Add_Scene_To_BuildSettings() {
             scene = NewScene.Instance.CreateScene("__SceneForUnitTests__", defaultSceneAssetTemplatePath);
             
