@@ -20,15 +20,15 @@ namespace EllenExplorer.Tools.Scenes {
         }
 
         public Scene CreateScene(string sceneName, string sceneAssetTemplatePath, string placeInPath = "") {
-            return NewSceneEditor.Initialize().CreateScene(sceneName, sceneAssetTemplatePath, placeInPath);
+            return NewSceneWindow.Initialize().CreateScene(sceneName, sceneAssetTemplatePath, placeInPath);
         }
 
         public void AddSceneToBuildSettings(Scene scene) {
-            NewSceneEditor.Initialize().AddSceneToBuildSettings(scene);
+            NewSceneWindow.Initialize().AddSceneToBuildSettings(scene);
         }
 
         public void CloseWindow() {
-            NewSceneEditor.Initialize().CloseWindow();
+            NewSceneWindow.Initialize().CloseWindow();
         }
     }
 }

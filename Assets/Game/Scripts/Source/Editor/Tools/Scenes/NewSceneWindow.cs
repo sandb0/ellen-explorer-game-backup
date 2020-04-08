@@ -8,8 +8,8 @@ namespace EllenExplorer.Tools.Scenes {
     /**
      * NewScene Editor implemetation.
      */
-    public class NewSceneEditor : EditorWindow {
-        private static NewSceneEditor Instance { set; get; }
+    public class NewSceneWindow : EditorWindow {
+        private static NewSceneWindow Instance { set; get; }
 
         private readonly string sceneAssetsTemplatesFilter = "Template t:Scene";
         private readonly string[] sceneAssetsTemplatesFolders = new string[] { "Assets/Game/Scenes/Templates" };
@@ -26,9 +26,9 @@ namespace EllenExplorer.Tools.Scenes {
         private int sceneAssetTemplateSelected;
 
         [MenuItem("Ellen Explorer/New Scene", priority = 100)]
-        public static NewSceneEditor Initialize() {
+        public static NewSceneWindow Initialize() {
             if (Instance == null) {
-                Instance = GetWindow<NewSceneEditor>();
+                Instance = GetWindow<NewSceneWindow>();
             }
 
             Instance.Show();
