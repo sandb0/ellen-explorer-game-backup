@@ -1,7 +1,7 @@
-﻿using UnityEngine.SceneManagement;
-using UnityEditor;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using System.Collections.Generic;
+using UnityEditor;
+using UnityEngine.SceneManagement;
 
 namespace EllenExplorer.Tools.Scenes.Tests {
     public class NewSceneTest {
@@ -9,7 +9,7 @@ namespace EllenExplorer.Tools.Scenes.Tests {
         private string defaultSceneAssetTemplatePath = "Assets/Game/Scenes/Templates/__DO_NOT_DELETE__.unity";
 
         private Scene scene;
-        
+
         [TearDown]
         public void Cleanup() {
             // Remove generated scenes.
@@ -30,7 +30,7 @@ namespace EllenExplorer.Tools.Scenes.Tests {
             // Remove inactive scenes from build settings: Update Build Settings.
             EditorBuildSettingsScene[] currentBuildScenes = EditorBuildSettings.scenes;
             List<EditorBuildSettingsScene> enabledBuildScenes = new List<EditorBuildSettingsScene>();
-            
+
             for (int i = 0; i < currentBuildScenes.Length; i++) {
                 if (currentBuildScenes[i].enabled) {
                     // Fixed! The last scene of build settings don't add on enabled list.
@@ -41,7 +41,7 @@ namespace EllenExplorer.Tools.Scenes.Tests {
                     enabledBuildScenes.Add(currentBuildScenes[i]);
                 }
             }
-            
+
             EditorBuildSettingsScene[] newScenes = enabledBuildScenes.ToArray();
             EditorBuildSettings.scenes = newScenes;
         }
@@ -56,14 +56,14 @@ namespace EllenExplorer.Tools.Scenes.Tests {
         [Test]
         public void Should_Create_New_Scene_Asset() {
             scene = NewScene.Instance.CreateScene("__SceneForUnitTests__", defaultSceneAssetTemplatePath);
-            
+
             Assert.IsTrue(scene.IsValid());
         }
 
         [Test]
         public void Should_Add_Scene_To_BuildSettings() {
             scene = NewScene.Instance.CreateScene("__SceneForUnitTests__", defaultSceneAssetTemplatePath);
-            
+
             NewScene.Instance.AddSceneToBuildSettings(scene);
             scene = SceneManager.GetSceneByBuildIndex(scene.buildIndex);
 

@@ -30,7 +30,7 @@ namespace EllenExplorer.Tools.Scenes {
             if (Instance == null) {
                 Instance = GetWindow<NewSceneEditor>();
             }
-            
+
             Instance.Show();
             Instance.sceneName = "NewScene";
 
