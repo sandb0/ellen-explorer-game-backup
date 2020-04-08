@@ -32,10 +32,10 @@ namespace EllenExplorer.Tools.Tiles {
 
         private PreviewRenderUtility previewRenderUtility;
         private Grid previewGrid;
-
-        private ReorderableList reorderableListOfRules;
         private List<Tilemap> previewTilemaps;
         private List<TilemapRenderer> previewTilemapRenderers;
+
+        private ReorderableList reorderableListOfRules;
 
         // ReorderableList of Rules helper.
         private RLRulesHelper rlRules;
@@ -113,7 +113,7 @@ namespace EllenExplorer.Tools.Tiles {
 
         public override Texture2D RenderStaticPreview(string assetPath, Object[] subAssets, int width, int height) {
             if (scriptedTile.defaultTileSprite != null) {
-                return UseDefaultTileSpriteOnScriptableObjectIcon(width, height);
+                return UseDefaultTileSpriteOnIconOfScriptableObject(width, height);
             }
                 
             return base.RenderStaticPreview(assetPath, subAssets, width, height);
@@ -167,7 +167,7 @@ namespace EllenExplorer.Tools.Tiles {
             }
         }
 
-        private Texture2D UseDefaultTileSpriteOnScriptableObjectIcon(int width, int height) {
+        private Texture2D UseDefaultTileSpriteOnIconOfScriptableObject(int width, int height) {
             /*
              * Basicamente, o ícone do ScriptableObject (ScriptedTile) será modificado pelo `scriptedTile.defaultTileSprite`.
              */
