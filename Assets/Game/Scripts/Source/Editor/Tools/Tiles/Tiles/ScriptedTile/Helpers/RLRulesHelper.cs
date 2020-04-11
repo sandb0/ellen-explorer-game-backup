@@ -71,22 +71,26 @@ namespace EllenExplorer.Tools.Tiles {
             bool displayAddButton = true;
             bool displayRemoveButton = true;
 
-            ReorderableList reorderableListOfRules = new ReorderableList(
-                scriptedTile.rules,
-                typeof(ScriptedTile.Rule),
-                draggable,
-                displayHeader,
-                displayAddButton,
-                displayRemoveButton
-            );
+            if (this.scriptedTile != null) {
+                ReorderableList reorderableListOfRules = new ReorderableList(
+                    this.scriptedTile.rules,
+                    typeof(ScriptedTile.Rule),
+                    draggable,
+                    displayHeader,
+                    displayAddButton,
+                    displayRemoveButton
+                );
 
-            reorderableListOfRules.drawHeaderCallback = OnDrawRLHeader;
-            reorderableListOfRules.drawElementCallback = OnDrawRLElement;
-            reorderableListOfRules.elementHeightCallback = GetRLElementHeight;
-            reorderableListOfRules.onChangedCallback = OnRLUpdated;
-            reorderableListOfRules.onAddCallback = OnRLAddElement;
+                reorderableListOfRules.drawHeaderCallback = OnDrawRLHeader;
+                reorderableListOfRules.drawElementCallback = OnDrawRLElement;
+                reorderableListOfRules.elementHeightCallback = GetRLElementHeight;
+                reorderableListOfRules.onChangedCallback = OnRLUpdated;
+                reorderableListOfRules.onAddCallback = OnRLAddElement;
 
-            return reorderableListOfRules;
+                return reorderableListOfRules;
+            }
+
+            return null;
         }
 
         public void ForceRefreshTiles(ScriptedTile scriptedTileTarget) {
@@ -204,10 +208,10 @@ namespace EllenExplorer.Tools.Tiles {
 
             if (rule.spriteOutputType == ScriptedTile.RuleTileData.SpriteOutputType.Random) {
                 fieldRectangle = GetFieldRectangle("Noise", componentPositionX, ref fieldPositionY, ref fieldOrderNumber, tileDataComponentRectangle, rule);
-                rule.perlinNoise = EditorGUI.Slider(fieldRectangle, rule.perlinNoise, 0.001f, 0.999f);
+                rule.perlinNoiseScale = EditorGUI.Slider(fieldRectangle, rule.perlinNoiseScale, 0.001f, 0.999f);
 
                 fieldRectangle = GetFieldRectangle("Rotation", componentPositionX, ref fieldPositionY, ref fieldOrderNumber, tileDataComponentRectangle, rule);
-                rule.randomRotationType = (ScriptedTile.Rule.RandomRotationType)EditorGUI.EnumPopup(fieldRectangle, rule.randomRotationType);
+                rule.randomSpriteRotationType = (ScriptedTile.Rule.RotationType)EditorGUI.EnumPopup(fieldRectangle, rule.randomSpriteRotationType);
             }
 
             // Lista de Sprites para a animação ou, para a randomização.
@@ -365,8 +369,8 @@ namespace EllenExplorer.Tools.Tiles {
 
                     OnNeighborBoxClick(neighborBoxRectangle, rule, neighbors, neighborBoxPositionOnMatrix);
                 } else {
-                    DrawRotationsIcons(neighborBoxRectangle, rule.randomRotationType);
                     OnCenteredNeighborBoxClick(neighborBoxRectangle, rule);
+                    DrawRotationsIcons(neighborBoxRectangle, rule.nextTileSelectionType);
                 }
             }
         }
@@ -400,9 +404,9 @@ namespace EllenExplorer.Tools.Tiles {
 
         private void OnCenteredNeighborBoxClick(Rect neighborBoxPositionOnMatrix, ScriptedTile.Rule rule) {
             if (Event.current.type == EventType.MouseDown && MouseOnPosition(neighborBoxPositionOnMatrix)) {
-                rule.randomRotationType = (ScriptedTile.RuleTileData.RandomRotationType)(int)Mathf.Repeat(
-                    (int)rule.randomRotationType + GetChangedClick(),
-                    Enum.GetValues(typeof(ScriptedTile.RuleTileData.RandomRotationType)).Length
+                rule.nextTileSelectionType = (ScriptedTile.RuleTileData.RotationType)(int)Mathf.Repeat(
+                    (int)rule.nextTileSelectionType + GetChangedClick(),
+                    Enum.GetValues(typeof(ScriptedTile.RuleTileData.RotationType)).Length
                 );
 
                 GUI.changed = true;
@@ -496,21 +500,21 @@ namespace EllenExplorer.Tools.Tiles {
             }
         }
 
-        private void DrawRotationsIcons(Rect neighborBoxRectangle, ScriptedTile.RuleTileData.RandomRotationType randomRotationType) {
-            switch (randomRotationType) {
-                case ScriptedTile.RuleTileData.RandomRotationType.Fixed:
+        private void DrawRotationsIcons(Rect neighborBoxRectangle, ScriptedTile.RuleTileData.RotationType nextTileSelectionType) {
+            switch (nextTileSelectionType) {
+                case ScriptedTile.RuleTileData.RotationType.Fixed:
                     GUI.DrawTexture(neighborBoxRectangle, rotationIconsTexture[0]);
                     break;
-                case ScriptedTile.RuleTileData.RandomRotationType.Rotated:
+                case ScriptedTile.RuleTileData.RotationType.Rotated:
                     GUI.DrawTexture(neighborBoxRectangle, rotationIconsTexture[1]);
                     break;
-                case ScriptedTile.RuleTileData.RandomRotationType.MirrorX:
+                case ScriptedTile.RuleTileData.RotationType.MirrorX:
                     GUI.DrawTexture(neighborBoxRectangle, rotationIconsTexture[2]);
                     break;
-                case ScriptedTile.RuleTileData.RandomRotationType.MirrorY:
+                case ScriptedTile.RuleTileData.RotationType.MirrorY:
                     GUI.DrawTexture(neighborBoxRectangle, rotationIconsTexture[3]);
                     break;
-                case ScriptedTile.RuleTileData.RandomRotationType.MirrorXY:
+                case ScriptedTile.RuleTileData.RotationType.MirrorXY:
                     GUI.DrawTexture(neighborBoxRectangle, rotationIconsTexture[4]);
                     break;
             }
@@ -594,7 +598,6 @@ namespace EllenExplorer.Tools.Tiles {
             BoundsInt neighborsMatrixBounds = GetNeighborsMatrixBounds(rule.GetNeighborsMatrixBoundsBySelectedNeighbors());
 
             float heightByTileDataComponent = 0f;
-
             float sumOfFieldPaddingTop;
             float sumOfheightOfAllSpritesFields;
 
@@ -636,7 +639,12 @@ namespace EllenExplorer.Tools.Tiles {
             return Mathf.Max(heightByTileDataComponent, neighborsMatrixGUIHeight);
         }
 
-        private void OnRLUpdated(ReorderableList list) { }
+        private void OnRLUpdated(ReorderableList list) {
+            // Os Tiles precisam ser atualizados caso, por exemplo, uma Rule é reordenada na lista.
+            if (scriptedTile != null) {
+                ForceRefreshTiles(scriptedTile);
+            }
+        }
 
         private void OnRLAddElement(ReorderableList list) {
             ScriptedTile.Rule rule = new ScriptedTile.Rule();

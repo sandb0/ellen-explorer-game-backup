@@ -55,10 +55,28 @@ namespace EllenExplorer.Tools.Tiles {
             public Tile.ColliderType tileColliderType = Tile.ColliderType.Sprite;
 
             public float animationSpeed = 1f;
+            public float perlinNoiseScale = 0.5f;
 
-            public float perlinNoise = 0.5f;
 
-            public RandomRotationType randomRotationType;
+            // Tipo da rotação randômica do Sprite do Tile.
+            public RotationType randomSpriteRotationType;
+            /*
+             * Tipo de seleção do nextTile.
+             * 
+             * Os RuleCodes dos Neighbors continuarão os mesmos, na mesma posição.
+             * Mas os Tiles selecionados para a verificação (nextTile), não serão respectivos a posição
+             * do NeighborBox.
+             * O Sprite do Tile tambem será rotacionado.
+             * 
+             * - Fixed: A seleção será normal, apenas um Tile e respectivo a posição do NeighborBox.
+             * - Rotated: A seleção acontece em 4 Tiles ao redor do Tile atual (a cada 90 graus).
+             * - MirrorX: A seleção acontece no Tile oposto ao NeighborBox no eixo X
+             * (se o NeighBox está na esquerda, o Tile selecionado será o da direita).
+             * - MirrorY: A seleção acontece no Tile oposto ao NeighborBox no eixo Y.
+             * (se o NeighBox está em cima, o Tile selecionado será o de baixo).
+             * - MirrorXY: A seleção acontece no Tile oposto ao NeighborBox no eixo X ou Y.
+             */
+            public RotationType nextTileSelectionType;
 
             public SpriteOutputType spriteOutputType = SpriteOutputType.Single;
 
@@ -73,19 +91,19 @@ namespace EllenExplorer.Tools.Tiles {
                 Animation
             }
 
-            public enum RandomRotationType {
-                Fixed,
-                Rotated, // Rotacionar o Sprite do Tile em 0, 90, 180 ou 270 graus.
-                MirrorX, // Rotacionar o Sprite do Tile em 180° no eixo X.
-                MirrorY, // Rotacionar o Sprite do Tile em 180° no eixo Y.
-                MirrorXY // Rotacionar o Sprite do Tile em 180° nos eixo X e/ou Y.
+            public enum RotationType {
+                Fixed, // Não há rotação. O Sprite e o nextTile não serão modificados.
+                Rotated, // Rotação 0°, 90°, 180° e 270°.
+                MirrorX, // Rotação X * -1. Oposto no eixo X.
+                MirrorY, // Rotação Y * -1. Oposto no eixo Y.
+                MirrorXY // Rotação X e/ou Y * -1. Oposto de X e/ou Y. No eixo X e/ou Y.
             }
         }
 
         [Serializable]
         public class Rule : RuleTileData {
             public List<int> neighborsRuleCode = new List<int>();
-            public List<Vector3Int> neighborsMatrixPosition = new List<Vector3Int>() {
+            public List<Vector3Int> neighborsBoxesPositionOnMatrix = new List<Vector3Int>() {
                 new Vector3Int(-1, 1, 0),
                 new Vector3Int(0, 1, 0),
                 new Vector3Int(1, 1, 0),
@@ -99,25 +117,19 @@ namespace EllenExplorer.Tools.Tiles {
             public Dictionary<Vector3Int, int> GetNeighbors() {
                 Dictionary<Vector3Int, int> neighbors = new Dictionary<Vector3Int, int>();
 
-                for (int neighborIndex = 0; neighborIndex < neighborsRuleCode.Count && neighborIndex < neighborsMatrixPosition.Count; neighborIndex++) {
-                    neighbors.Add(neighborsMatrixPosition[neighborIndex], neighborsRuleCode[neighborIndex]);
+                for (int neighborIndex = 0; neighborIndex < neighborsRuleCode.Count && neighborIndex < neighborsBoxesPositionOnMatrix.Count; neighborIndex++) {
+                    neighbors.Add(neighborsBoxesPositionOnMatrix[neighborIndex], neighborsRuleCode[neighborIndex]);
                 }
 
                 return neighbors;
             }
 
             public void SetNeighbors(Dictionary<Vector3Int, int> neighbors) {
-                neighborsMatrixPosition = neighbors.Keys.ToList();
+                neighborsBoxesPositionOnMatrix = neighbors.Keys.ToList();
                 neighborsRuleCode = neighbors.Values.ToList();
             }
 
             public BoundsInt GetNeighborsMatrixBoundsBySelectedNeighbors() {
-                /**
-                 * BoundsInt é uma caixa usada para delimitações.
-                 * 
-                 * Será usado para delimitar os limites do Neighbor Matrix.
-                 */
-
                 Vector3Int boundsMinSize = Vector3Int.zero;
                 Vector3Int boundsMaxSize = Vector3Int.zero;
                 BoundsInt bounds = new BoundsInt(boundsMinSize, boundsMaxSize);
@@ -142,21 +154,10 @@ namespace EllenExplorer.Tools.Tiles {
         public List<Rule> rules = new List<Rule>();
 
         #region TileBase override methods implementation.
-        /// <summary>
-        /// </summary>
-        /// <param name="tilePosition">Posição do Tile no Tilemap.</param>
-        /// <param name="tilemap">O Tilemap em que o Tile está.</param>
-        /// <param name="gameObject">Um GameObject para o Tile.</param>
-        /// <returns>True.</returns>
         public override bool StartUp(Vector3Int tilePosition, ITilemap tilemap, GameObject gameObject) {
             return true;
         }
 
-        /// <summary>
-        /// </summary>
-        /// <param name="tilePosition">Posição do Tile no Tilemap.</param>
-        /// <param name="tilemap">O Tilemap em que o Tile está.</param>
-        /// <param name="tileData">Dados do Tile que será renderizado (painted).</param>
         public override void GetTileData(Vector3Int tilePosition, ITilemap tilemap, ref TileData tileData) {
             Matrix4x4 matrixTransform = Matrix4x4.identity;
 
@@ -168,23 +169,13 @@ namespace EllenExplorer.Tools.Tiles {
             tileData.transform = matrixTransform;
             tileData.flags = TileFlags.LockTransform;
 
-            CheckRulesToTryMatchOnTile(tilePosition, tilemap, ref tileData, matrixTransform);
+            CheckRuleCanReplaceTileData(tilePosition, tilemap, ref tileData, matrixTransform);
         }
 
-        /// <summary>
-        /// </summary>
-        /// <param name="tilePosition">Posição do Tile no Tilemap.</param>
-        /// <param name="tilemap">O Tilemap em que o Tile está.</param>
-        /// <param name="tileAnimationData">Dados para executar uma animação no Tile que será renderizado (painted).</param>
-        /// <returns>True.</returns>
         public override bool GetTileAnimationData(Vector3Int tilePosition, ITilemap tilemap, ref TileAnimationData tileAnimationData) {
             return true;
         }
 
-        /// <summary>
-        /// </summary>
-        /// <param name="tilePosition">Posição do Tile no Tilemap.</param>
-        /// <param name="tilemap">O Tilemap em que o Tile está.</param>
         public override void RefreshTile(Vector3Int tilePosition, ITilemap tilemap) {
             OnEnterOrLeaveWithAnyTilePaintToolInTilemap(tilePosition, tilemap);
         }
@@ -202,76 +193,327 @@ namespace EllenExplorer.Tools.Tiles {
              * O método `base.RefreshTile()` irá executar os métodos `GetTileData()`, `StartUp()`, `GetTileAnimationData()` se,
              * qualquer tile paint tool entrar em um Tile (painted).
              */
-            //base.RefreshTile(tilePosition, tilemap);
+            base.RefreshTile(tilePosition, tilemap);
         }
 
-        private void CheckRulesToTryMatchOnTile(Vector3Int tilePosition, ITilemap tilemap, ref TileData tileData, Matrix4x4 matrixTransform) {
+        private void CheckRuleCanReplaceTileData(Vector3Int tilePosition, ITilemap tilemap, ref TileData tileData, Matrix4x4 matrixTransform) {
             /**
-             * As Rules são varificadas uma a uma, até que uma delas corresponda ao Tile.
-             * Se nenhuma Rule corresponder o Tile, os dados padrão do Tile serão usados.
+             * Cada Rule contém uma sua regra de substituição, os Neighbors.
+             * Por exemplo, esta Rule só irá substituir um Tile se, tiver um Tile aqui, não tiver ali e, tiver aqui.
              * 
-             * As Rules devem modificar os dados do Tile: Sprite, Transform, GameObject e ColliderType.
+             * Para que uma Rule possa substituir os dados de um Tile, os Neighbors devem ser
+             * correspondidos.
              * 
-             * Uma Rule corresponde a um Tile de acordo com os `Neighbors` e os Tiles ao redor do Tile.
+             * As Rules serão verificadas uma a uma, até que os Neighbors de uma delas sejam correspondidos.
+             * Se os Neighbors de nenhuma Rule for correspondido, o Tile usurá seus dados padrão.
              */
             foreach (Rule rule in rules) {
                 Matrix4x4 transform = matrixTransform;
 
-                bool ruleMatch = RuleMatches(rule, tilePosition, tilemap, ref transform);
+                bool neighborMatched = IsNeighborsMatched(rule, tilePosition, tilemap, ref transform);
 
-                if (ruleMatch) {
-                    ChangeTileData(rule, ref tileData, transform);
+                if (neighborMatched) {
+                    ReplaceTileData(rule, tilePosition, ref tileData, transform);
 
-                    // O restante das Rules não precisam ser verificadas.
+                    /*
+                     * O restante das Rules não precisam ser verificadas.
+                     * 
+                     * É por causa disso que a ordem das Rules na lista é importante.
+                     * É a primeira Rule correspondida que irá substituir os dados do Tile.
+                     */
                     break;
                 }
             }
         }
 
-        private bool RuleMatches(Rule rule, Vector3Int tilePosition, ITilemap tilemap, ref Matrix4x4 transform) {
+        #region Neighbors matches checking.
+        private bool IsNeighborsMatched(Rule rule, Vector3Int tilePosition, ITilemap tilemap, ref Matrix4x4 transform) {
+            #region @CLASSROOM A lógica do NextTile Selection Type.
             /**
-             * Dentro de um Rule, todos os Neighbors serão verificados.
-             * Se todos os Neighbors forem válidos, o Tile atual será moficado pelo Rule.
+             * A regra de substituição (Neighbors) possui 8 NeighborsBox.
+             *   0 1 2
+             *   3 - 5
+             *   6 7 8
+             * O - é o Tile atual. O que, talvez, será substituído.
+             * 
+             * Cada NeighborBox possui uma regra: MustHave, MustNotHave and, Whatever.
+             * Cada NeighborBox será verificado se, o Tile respectivo ao NeighborBox corresponde a regra.
+             * Essa é a funcionalidade padrão: Fixed.
+             * 
+             * Mas, existem 4 outros tipos de verificação: Rotated, MirrorX, MirrorY and, MirrorXY.
+             * 
+             * - Rotated:
+             * Se no tipo Fixed, o Tile 3, seria verificado apenas com NeighborBox 3, no tipo Rotated,
+             * os Tile 3, 1, 5 e 7 serão verificados com o NeighborBox 3. Percebeu? Os nextTiles foram
+             * rotacionados em 90°, e verificados um a um se, algum corresponderia a regra no NeighborBox.
+             * - MirrorX:
+             * Se no tipo Fixed, o Tile 3, seria verificado apenas com NeighborBox 3, no tipo MirrorX,
+             * o Tile 5, será verificado com o NeighborBox 3. Percebeu? O nextTile foi invertido no eixo X e, 
+             * verificado se, corresponderia a regra no NeighborBox.
+             * - MirrorY:
+             * Se no tipo Fixed, o Tile 2, seria verificado apenas com NeighborBox 2, no tipo MirrorY,
+             * o Tile 8, será verificado com o NeighborBox 2. Percebeu? O nextTile foi invertido no eixo Y e, 
+             * verificado se, corresponderia a regra no NeighborBox.
+             * - MirrorXY:
+             * Os tipos MirrorX e/ou MirrorY entrarão em ação. Depende de qual corresponder ao NeighborBox.
              */
-            /*for (int neighborIndex = 0; neighborIndex < rule.neighbors.Count; neighborIndex++) {
+            #endregion
+
+            if (IsFixedNeighborsMatched(rule, tilePosition, tilemap)) {
+                transform = Matrix4x4.TRS(Vector3.zero, Quaternion.Euler(0f, 0f, 0f), Vector3.one);
+
+                return true;
+            }
+
+            if (rule.nextTileSelectionType == ScriptedTile.RuleTileData.RotationType.Rotated) {
+                // 4 nextTiles 90° de distância um do outro serão verificados no mesmo NeighborBox.
+                for (int rotation = 90; rotation < 360; rotation += 90) {
+                    if (IsRotatedNeighborsMatched(rule, tilePosition, tilemap, rotation)) {
+                        transform = Matrix4x4.TRS(Vector3.zero, Quaternion.Euler(0f, 0f, -rotation), Vector3.one);
+
+                        return true;
+                    }
+                }
+            } else if (rule.nextTileSelectionType == ScriptedTile.RuleTileData.RotationType.MirrorX) {
+                // Verifica invertendo o nextTile no eixo X.
+                if (IsMirroredNeighborsMatched(rule, tilePosition, tilemap, true, false)) {
+                    transform = Matrix4x4.TRS(Vector3.zero, Quaternion.identity, new Vector3(-1f, 1f, 1f));
+
+                    return true;
+                }
+            } else if (rule.nextTileSelectionType == ScriptedTile.RuleTileData.RotationType.MirrorY) {
+                // Verifica invertendo o nextTile no eixo Y.
+                if (IsMirroredNeighborsMatched(rule, tilePosition, tilemap, false, true)) {
+                    transform = Matrix4x4.TRS(Vector3.zero, Quaternion.identity, new Vector3(1f, -1f, 1f));
+
+                    return true;
+                }
+            } else if (rule.nextTileSelectionType == ScriptedTile.RuleTileData.RotationType.MirrorXY) {
+                // Verifica invertendo o nextTile nos eixos X e Y.
+                if (IsMirroredNeighborsMatched(rule, tilePosition, tilemap, true, true)) {
+                    transform = Matrix4x4.TRS(Vector3.zero, Quaternion.identity, new Vector3(-1f, -1f, 1f));
+
+                    return true;
+                }
+
+                // Verifica invertendo o nextTile no eixo X.
+                if (IsMirroredNeighborsMatched(rule, tilePosition, tilemap, true, false)) {
+                    transform = Matrix4x4.TRS(Vector3.zero, Quaternion.identity, new Vector3(-1f, 1f, 1f));
+
+                    return true;
+                }
+
+                // Verifica invertendo o nextTile no eixo Y.
+                if (IsMirroredNeighborsMatched(rule, tilePosition, tilemap, false, true)) {
+                    transform = Matrix4x4.TRS(Vector3.zero, Quaternion.identity, new Vector3(1f, -1f, 1f));
+
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        private bool IsFixedNeighborsMatched(Rule rule, Vector3Int tilePosition, ITilemap tilemap) {
+            return IsRotatedNeighborsMatched(rule, tilePosition, tilemap, 0);
+        }
+
+        private bool IsRotatedNeighborsMatched(Rule rule, Vector3Int tilePosition, ITilemap tilemap, int rotation) {
+            // Cada NeighborBox e sua respectiva RuleCode será verificada.
+            for (int neighborIndex = 0; neighborIndex < rule.neighborsRuleCode.Count && neighborIndex < rule.neighborsBoxesPositionOnMatrix.Count; neighborIndex++) {
                 int neighborRuleCode = rule.neighborsRuleCode[neighborIndex];
+                
+                Vector3Int neighborBoxPositionOnMatrix = rule.neighborsBoxesPositionOnMatrix[neighborIndex];
 
-                Vector3Int positionOffset = rule.neighborsMatrixPosition[neighborIndex];
+                // Através da rotação, calcular o offset do nextTile.
+                Vector3Int nextTilePositionOffsetByRotation = GetNextTilePositionOffsetByRotation(neighborBoxPositionOnMatrix, rotation);
+                // Com o offset do nextTile, calcular a posição do nextTile.
+                Vector3Int nextTilePosition = GetNextTilePosition(tilePosition, nextTilePositionOffsetByRotation);
 
-                TileBase tileByNeighborPosition = tilemap.GetTile(tilePosition + positionOffset);
+                TileBase nextTile = tilemap.GetTile(nextTilePosition);
 
-                if (!PigMethod(neighborRuleCode, tileByNeighborPosition)) {
+                // Se o NeighborBox não é correspondido, a Rule não poderá substituir os dados do Tile.
+                if (!IsNeighborBoxMatched(neighborRuleCode, nextTile)) {
                     return false;
                 }
-            }*/
+            }
 
+            // Todos os NeighborBoxes foram correspondidos, logo, a Rule poderá substituir os dados do Tile.
             return true;
         }
 
-        private bool PigMethod(int neighborRuleCode, TileBase tileByNeighborPosition) {
-            ScriptedTile thisRuleTile = this;
+        private bool IsMirroredNeighborsMatched(Rule rule, Vector3Int tilePosition, ITilemap tilemap, bool isMirrorX, bool isMirrorY) {
+            // Cada NeighborBox e sua respectiva RuleCode será verificada.
+            for (int neighborIndex = 0; neighborIndex < rule.neighborsRuleCode.Count && neighborIndex < rule.neighborsBoxesPositionOnMatrix.Count; neighborIndex++) {
+                int neighborRuleCode = rule.neighborsRuleCode[neighborIndex];
+
+                Vector3Int neighborBoxPositionOnMatrix = rule.neighborsBoxesPositionOnMatrix[neighborIndex];
+
+                // O offset do nextTile é o oposto do NeighborBox.
+                Vector3Int nextTilePositionOffsetByMirrorAxis = GetNextTilePositionOffsetByMirrorAxis(neighborBoxPositionOnMatrix, isMirrorX, isMirrorY);
+                // Com o offset do nextTile, calcular a posição do nextTile.
+                Vector3Int nextTilePosition = GetNextTilePosition(tilePosition, nextTilePositionOffsetByMirrorAxis);
+
+                TileBase nextTile = tilemap.GetTile(nextTilePosition);
+
+                // Se o NeighborBox não é correspondido, a Rule não poderá substituir os dados do Tile.
+                if (!IsNeighborBoxMatched(neighborRuleCode, nextTile)) {
+                    return false;
+                }
+            }
+
+            // Todos os NeighborBoxes foram correspondidos, logo, a Rule poderá substituir os dados do Tile.
+            return true;
+        }
+
+        private bool IsNeighborBoxMatched(int neighborRuleCode, TileBase nextTile) {
+            ScriptedTile thisScriptedTile = this;
 
             switch (neighborRuleCode) {
+                /*
+                    * Se o NeighborBox pede um MustHave, e o Tile (`nextTile`) respectivo ao NeighborBoxPositionOnMatrix
+                    * pertencer ao mesmo ScriptedTile, os outros NeighborBox devem continuar sendo verificados, pois, talvez,
+                    * todos os Neighbors serão correspondidos e, o Rule poderá substituir os dados do Tile.
+                    * 
+                    * Se não for do mesmo ScriptedTile, o NeighborBox não é correspondido e a Rule não poderá substituir os dados do Tile.
+                    */
                 case RuleTileData.NeighborRuleCode.MustHave:
-                    return tileByNeighborPosition == thisRuleTile;
+                    return nextTile == thisScriptedTile;
+                /*
+                    * Se o NeighborBox pede um MustNotHave, e o Tile (`nextTile`) respectivo ao NeighborBoxPositionOnMatrix
+                    * pertencer a outro ScriptedTile (outro Tile), os outros NeighborBox devem continuar sendo verificados, pois, talvez,
+                    * todos os Neighbors serão correspondidos e, o Rule poderá substituir os dados Tile.
+                    * 
+                    * Se for do mesmo ScriptedTile, o NeighborBox não é correspondido e a Rule não poderá substituir os dados do Tile.
+                    */
                 case RuleTileData.NeighborRuleCode.MustNotHave:
-                    return tileByNeighborPosition != thisRuleTile;
+                    return nextTile != thisScriptedTile;
             }
 
             return true;
         }
 
-        private void ChangeTileData(Rule rule, ref TileData tileData, Matrix4x4 matrixTransform) {
+        #region Helpers.
+        private Vector3Int GetNextTilePositionOffsetByRotation(Vector3Int neighborBoxPositionOnMatrix, int rotation) {
+            switch (rotation) {
+                case 0:
+                    return neighborBoxPositionOnMatrix;
+                case 90:
+                    return new Vector3Int(neighborBoxPositionOnMatrix.y, -neighborBoxPositionOnMatrix.x, 0);
+                case 180:
+                    return new Vector3Int(-neighborBoxPositionOnMatrix.x, -neighborBoxPositionOnMatrix.y, 0);
+                case 270:
+                    return new Vector3Int(-neighborBoxPositionOnMatrix.y, neighborBoxPositionOnMatrix.x, 0);
+            }
+
+            return neighborBoxPositionOnMatrix;
+        }
+
+        private Vector3Int GetNextTilePositionOffsetByMirrorAxis(Vector3Int neighborBoxPositionOnMatrix, bool isMirrorX, bool isMirrorY) {
+            if (isMirrorX) {
+                neighborBoxPositionOnMatrix.x *= -1;
+            }
+
+            if (isMirrorY) {
+                neighborBoxPositionOnMatrix.y *= -1;
+            }
+
+            return neighborBoxPositionOnMatrix;
+        }
+
+        private Vector3Int GetNextTilePosition(Vector3Int currentTilePosition, Vector3Int nextPosition) {
+            return currentTilePosition + nextPosition;
+        }
+        #endregion
+        #endregion
+
+        private float GetPerlinNoiseValue(Vector3Int tilePosition, float perlinNoiseScale, float offset) {
+            float x = (tilePosition.x + offset) * perlinNoiseScale;
+            float y = (tilePosition.y + offset) * perlinNoiseScale;
+
+            return Mathf.PerlinNoise(x, y);
+        }
+
+        private void ReplaceTileData(Rule rule, Vector3Int tilePosition, ref TileData tileData, Matrix4x4 matrixTransform) {
             switch (rule.spriteOutputType) {
                 case Rule.SpriteOutputType.Single:
                 case Rule.SpriteOutputType.Animation:
                     tileData.sprite = rule.tileSprites[0];
+                    break;
+                case Rule.SpriteOutputType.Random:
+                    int firstSpriteIndex = 0;
+                    int lastSpriteIndex = rule.tileSprites.Length;
+                    int randomSpriteIndex = Mathf.FloorToInt(GetPerlinNoiseValue(tilePosition, rule.perlinNoiseScale, 100000f) * lastSpriteIndex);
+
+                    int spriteIndex = Mathf.Clamp(randomSpriteIndex, firstSpriteIndex, lastSpriteIndex - 1);
+
+                    tileData.sprite = rule.tileSprites[spriteIndex];
+
+                    // Random Sprite rotation.
+                    if (rule.randomSpriteRotationType != Rule.RotationType.Fixed) {
+                        matrixTransform = GetSpriteRandomRotation(rule.randomSpriteRotationType, matrixTransform, rule.perlinNoiseScale, tilePosition);
+                    }
                     break;
             }
 
             tileData.transform = matrixTransform;
             tileData.gameObject = rule.tileGameObject;
             tileData.colliderType = rule.tileColliderType;
+        }
+
+        private Matrix4x4 GetSpriteRandomRotation(Rule.RotationType randomSpriteRotationType, Matrix4x4 transform, float perlinNoiseScale, Vector3Int tilePosition) {
+            Vector3 position = Vector3.zero;
+            Quaternion quaternion = Quaternion.identity;
+            Vector3 scale = Vector3.one;
+
+            float perlinNoiseScaleValue = GetPerlinNoiseValue(tilePosition, perlinNoiseScale, 200000f);
+
+            switch (randomSpriteRotationType) {
+                // Rotaciona o Sprite.
+                case RuleTileData.RotationType.Rotated:
+                    int rotation = Mathf.Clamp(
+                        Mathf.FloorToInt(perlinNoiseScaleValue * 4),
+                        0,
+                        4 - 1
+                    );
+
+                    quaternion = Quaternion.Euler(0f, 0f, -(rotation * 90));
+
+                    return transform * Matrix4x4.TRS(position, quaternion, scale);
+
+                // Inverter ou não o Sprite no eixo X.
+                case RuleTileData.RotationType.MirrorX:
+                    scale = new Vector3(
+                        perlinNoiseScaleValue < 0.5 ? 1f : -1f,
+                        1f,
+                        1f
+                    );
+
+                    return transform * Matrix4x4.TRS(position, quaternion, scale);
+
+                // Inverter ou não o Sprite no eixo Y.
+                case RuleTileData.RotationType.MirrorY:
+                    scale = new Vector3(
+                        1f,
+                        // Inverter ou não o Sprite no eixo Y.
+                        perlinNoiseScaleValue < 0.5 ? 1f : -1f,
+                        1f
+                    );
+
+                    return transform * Matrix4x4.TRS(position, quaternion, scale);
+
+                // Inverter ou não o Sprite nos eixos X e/ou Y.
+                case RuleTileData.RotationType.MirrorXY:
+                    scale = new Vector3(
+                        Math.Abs(perlinNoiseScaleValue - 0.5) > 0.25 ? 1f : -1f,
+                        perlinNoiseScaleValue < 0.5 ? 1f : -1f,
+                        1f
+                    );
+
+                    return transform * Matrix4x4.TRS(position, quaternion, scale);
+            }
+
+            return transform;
         }
     }
 }

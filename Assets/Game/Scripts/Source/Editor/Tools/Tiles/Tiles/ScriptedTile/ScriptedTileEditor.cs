@@ -87,6 +87,7 @@ namespace EllenExplorer.Tools.Tiles {
             }
         }
 
+        #region PreviewGUI.
         public override bool HasPreviewGUI() {
             return true;
         }
@@ -111,15 +112,7 @@ namespace EllenExplorer.Tools.Tiles {
             previewRenderUtility.EndAndDrawPreview(previewRectangle);
         }
 
-        public override Texture2D RenderStaticPreview(string assetPath, Object[] subAssets, int width, int height) {
-            if (scriptedTile.defaultTileSprite != null) {
-                return UseDefaultTileSpriteOnIconOfScriptableObject(width, height);
-            }
-                
-            return base.RenderStaticPreview(assetPath, subAssets, width, height);
-        }
-        #endregion
-
+        #region PreviewGUI helpers.
         private void CreatePreview() {
             previewRenderUtility = new PreviewRenderUtility(true);
             previewRenderUtility.camera.orthographic = true;
@@ -166,6 +159,17 @@ namespace EllenExplorer.Tools.Tiles {
                 previewTilemapRenderers = null;
             }
         }
+        #endregion
+        #endregion
+
+        #region ScriptableObject icon.
+        public override Texture2D RenderStaticPreview(string assetPath, Object[] subAssets, int width, int height) {
+            if (scriptedTile.defaultTileSprite != null) {
+                return UseDefaultTileSpriteOnIconOfScriptableObject(width, height);
+            }
+
+            return base.RenderStaticPreview(assetPath, subAssets, width, height);
+        }
 
         private Texture2D UseDefaultTileSpriteOnIconOfScriptableObject(int width, int height) {
             /*
@@ -173,7 +177,7 @@ namespace EllenExplorer.Tools.Tiles {
              */
 
             Type type = GetTypeByAssemblies("UnityEditor.SpriteUtility");
-            
+
             if (type != null) {
                 Type[] types = new Type[4] {
                     typeof(Sprite),
@@ -202,6 +206,8 @@ namespace EllenExplorer.Tools.Tiles {
 
             return null;
         }
+        #endregion
+        #endregion
 
         private Type GetTypeByAssemblies(string typeName) {
             Type type = Type.GetType(typeName);
