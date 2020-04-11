@@ -47,7 +47,7 @@ namespace EllenExplorer.Tools.Tiles {
         #endregion
         private void OnEnable() {
             rlRules = RLRulesHelper.Create();
-            
+
             reorderableListOfRules = rlRules.CreateReorderableListOfRules(scriptedTile);
         }
 

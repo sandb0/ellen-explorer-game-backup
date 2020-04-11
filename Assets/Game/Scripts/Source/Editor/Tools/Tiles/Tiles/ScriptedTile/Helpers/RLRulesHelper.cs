@@ -346,7 +346,7 @@ namespace EllenExplorer.Tools.Tiles {
                         width,
                         height
                     );
-                    
+
                     InNeighborBox(neighborBoxPositionOnMatrix, neighborBoxRectangle, rule, neighbors);
                 }
             }
@@ -443,7 +443,7 @@ namespace EllenExplorer.Tools.Tiles {
 
         private void OnMouseHoverPrintTooltipByNeighborBox(Rect neighborBoxRectangle, int ruleCode) {
             FieldInfo[] enumRuleCodes = scriptedTile.neighborRuleCodes.GetFields(System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.FlattenHierarchy);
-            
+
             foreach (FieldInfo enumRuleCode in enumRuleCodes) {
                 if ((int)enumRuleCode.GetValue(null) == ruleCode) {
                     // `GUIContent()`: On Mouse Hover in `neighborBoxRectangle` show Enum Rule Code Name.
