@@ -1,0 +1,3395 @@
+fileFormatVersion: 2
+guid: 9b2b39f6ef0234947944d7910e9f6670
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3886991889690449406
+    second: Grass Corner Left
+  - first:
+      213: 7554481604666009311
+    second: Grass 0
+  - first:
+      213: -4052286286075085803
+    second: Grass 1
+  - first:
+      213: 8321714878107517632
+    second: Grass 2
+  - first:
+      213: -6581504073552197220
+    second: Grass 3
+  - first:
+      213: -4531690120383335396
+    second: Grass 4
+  - first:
+      213: -6617579431134654521
+    second: Grass 5
+  - first:
+      213: 1328641429955694069
+    second: Grass 6
+  - first:
+      213: 4295226749695926648
+    second: Grass Corner Right
+  - first:
+      213: -4435661164258056124
+    second: Wall Left 0
+  - first:
+      213: -4013870114788639045
+    second: Fill 0
+  - first:
+      213: 8500180218769451004
+    second: Fill 1
+  - first:
+      213: -8180998256380386487
+    second: Fill 2
+  - first:
+      213: -3274056527488068681
+    second: Fill 3
+  - first:
+      213: -3932606123113709883
+    second: Fill 4
+  - first:
+      213: -9161311628635337421
+    second: Fill 5
+  - first:
+      213: 1211028411420177341
+    second: Fill 6
+  - first:
+      213: -2238289603660276647
+    second: Wall Right 0
+  - first:
+      213: 247503291144586257
+    second: Grass Inner Wall Left
+  - first:
+      213: 2794154004684953918
+    second: Wall Left 1
+  - first:
+      213: -7762604283655690273
+    second: Fill 7
+  - first:
+      213: 4836549508208671071
+    second: Fill 8
+  - first:
+      213: 8683627204173158398
+    second: Fill 9
+  - first:
+      213: 414936046162736983
+    second: Fill 10
+  - first:
+      213: 6188287665996007263
+    second: Fill 11
+  - first:
+      213: 929895363805513988
+    second: Ceilling 0
+  - first:
+      213: -3944082893500521469
+    second: Ceilling 1
+  - first:
+      213: 2840778069395328125
+    second: Wall Right 1
+  - first:
+      213: -2627059921939925698
+    second: Grass Inner Wall Right
+  - first:
+      213: -7538043728003956802
+    second: Wall Left 2
+  - first:
+      213: 2084501343829660596
+    second: Ceilling Corner Left
+  - first:
+      213: 350456080078125665
+    second: Ceilling 2
+  - first:
+      213: 3619025754316855383
+    second: Ceilling 3
+  - first:
+      213: 4050284459050298581
+    second: Ceilling 4
+  - first:
+      213: 3159969852821607073
+    second: Ceilling 5
+  - first:
+      213: -8844669507599057790
+    second: Ceilling 6
+  - first:
+      213: -1175342085072937684
+    second: Ceilling Corner Right
+  - first:
+      213: 1251578332236870696
+    second: Wall Right 2
+  - first:
+      213: 7701791312499952943
+    second: Wall Left 3
+  - first:
+      213: 6937853632240854402
+    second: Grass Column
+  - first:
+      213: -106900629362283215
+    second: Grass Inner Corner Single Left
+  - first:
+      213: 8434630411125806507
+    second: Grass Inner Corner Single Right
+  - first:
+      213: -2232854433915198666
+    second: Grass Inner Right 0
+  - first:
+      213: 7976075012827114995
+    second: Grass Inner Right 1
+  - first:
+      213: -8239919332253830784
+    second: Grass Inner Right 2
+  - first:
+      213: -6942717885061724228
+    second: Grass Inner Right 3
+  - first:
+      213: 8720430066628258908
+    second: Wall Right 3
+  - first:
+      213: -1922700812032389931
+    second: Column 0
+  - first:
+      213: -7401250462661055777
+    second: Wall Left 4
+  - first:
+      213: 1918807701877941946
+    second: Single
+  - first:
+      213: 5546125155121638862
+    second: Grass Inner Ceilling Right
+  - first:
+      213: 8681688869208777346
+    second: Grass Inner Ceilling Left
+  - first:
+      213: -4531108694264437572
+    second: Grass Inner Left 0
+  - first:
+      213: 209861807068386587
+    second: Grass Inner Left 1
+  - first:
+      213: -2224288138361603025
+    second: Grass Inner Left 2
+  - first:
+      213: -5378046649112382223
+    second: Grass Inner Left 3
+  - first:
+      213: 2240526712462342531
+    second: Wall Right 4
+  - first:
+      213: -168248740583242628
+    second: Column 1
+  - first:
+      213: -2208743348344042782
+    second: Wall Left 5
+  - first:
+      213: -5818941979361047731
+    second: Grass Inner Single Left
+  - first:
+      213: -3869310853854476529
+    second: Grass Single 0
+  - first:
+      213: 8979864409892088902
+    second: Grass Single 1
+  - first:
+      213: 5214692447809866391
+    second: Grass Single 2
+  - first:
+      213: 3014412281925490944
+    second: Grass Single 3
+  - first:
+      213: 1860544124299888106
+    second: Grass Single 4
+  - first:
+      213: 5549761364065673552
+    second: Grass Inner Single Right
+  - first:
+      213: 6005222580067410818
+    second: Wall Right 5
+  - first:
+      213: -566041618039796478
+    second: Column 2
+  - first:
+      213: 4190812720828203058
+    second: Wall Left 6
+  - first:
+      213: -1282612798645634942
+    second: Grass Single Corner Left
+  - first:
+      213: -3135314978324183498
+    second: Grass Single 5
+  - first:
+      213: -4868432154146220168
+    second: Grass Single 6
+  - first:
+      213: 5352192993678620033
+    second: Grass Single Corner Right
+  - first:
+      213: -634362727068254099
+    second: Grass Inner Single Center
+  - first:
+      213: -8561266585176963899
+    second: Grass Inner Center
+  - first:
+      213: 5127542291509761558
+    second: Wall Right 6
+  - first:
+      213: -8401850433715117816
+    second: Column Ceilling
+  - first:
+      213: 4330386260970928502
+    second: Tileset Grass_77
+  - first:
+      213: 1795083676456503128
+    second: Tileset Grass_78
+  - first:
+      213: 6314762827291408204
+    second: Tileset Grass_79
+  - first:
+      213: 2951120351618560330
+    second: Tileset Grass_80
+  - first:
+      213: 7119288605695175698
+    second: Tileset Grass_81
+  - first:
+      213: -5150807787471335939
+    second: Tileset Grass_82
+  - first:
+      213: -371283381269450786
+    second: Tileset Grass_83
+  - first:
+      213: 9068015034492912583
+    second: Grass Inner Corner Ceilling Left
+  - first:
+      213: -2204259891489919506
+    second: Grass Inner Corner Ceilling Right
+  - first:
+      213: -6225678909434062794
+    second: Tileset Grass_86
+  - first:
+      213: 8735619299832964167
+    second: Tileset Grass_87
+  - first:
+      213: 6366085485268332074
+    second: Tileset Grass_88
+  - first:
+      213: 4745619373412968350
+    second: Tileset Grass_89
+  - first:
+      213: 4336190591843613946
+    second: Tileset Grass_90
+  - first:
+      213: 4831413058606733266
+    second: Tileset Grass_91
+  - first:
+      213: 4360490876984449956
+    second: Tileset Grass_92
+  - first:
+      213: 6653288766923505895
+    second: Grass Corner Left
+  - first:
+      213: -4092822246441895452
+    second: Grass 0
+  - first:
+      213: -5365170484683580414
+    second: Grass 1
+  - first:
+      213: -1588115628386344613
+    second: Grass 2
+  - first:
+      213: 8327376620410987653
+    second: Grass 3
+  - first:
+      213: -6698568997509277645
+    second: Grass 4
+  - first:
+      213: -2355525316020866559
+    second: Grass 5
+  - first:
+      213: 1261290830971175878
+    second: Grass 6
+  - first:
+      213: 1389007045304881348
+    second: Grass Corner Right
+  - first:
+      213: 36267096520498319
+    second: Wall Left 0
+  - first:
+      213: 1980103319225344245
+    second: Fill 0
+  - first:
+      213: 5618776957900697906
+    second: Fill 1
+  - first:
+      213: 5473190854341271333
+    second: Fill 2
+  - first:
+      213: 2085796058899901264
+    second: Fill 3
+  - first:
+      213: 2623791353878875972
+    second: Fill 4
+  - first:
+      213: -174703993040660764
+    second: Fill 5
+  - first:
+      213: 3289898263862336227
+    second: Fill 6
+  - first:
+      213: -4612718772738186995
+    second: Wall Right 0
+  - first:
+      213: 7385288901598829267
+    second: Grass Inner Wall Left
+  - first:
+      213: -7282707688337276868
+    second: Wall Left 1
+  - first:
+      213: -1297092260322519039
+    second: Fill 7
+  - first:
+      213: -6333685125855790179
+    second: Fill 8
+  - first:
+      213: 1135314113943416357
+    second: Fill 9
+  - first:
+      213: -8579861266955233309
+    second: Fill 10
+  - first:
+      213: 7017094378088774530
+    second: Fill 11
+  - first:
+      213: 7393942902493763260
+    second: Ceilling 0
+  - first:
+      213: 5186564888178100641
+    second: Ceilling 1
+  - first:
+      213: -2866517914325657505
+    second: Wall Right 1
+  - first:
+      213: 5595680803601901250
+    second: Grass Inner Wall Right
+  - first:
+      213: 3889534537393199798
+    second: Wall Left 2
+  - first:
+      213: -1247001369550788514
+    second: Ceilling Corner Left
+  - first:
+      213: 8443566844422151603
+    second: Ceilling 2
+  - first:
+      213: -7022816540778947759
+    second: Ceilling 3
+  - first:
+      213: -5043156886622255662
+    second: Ceilling 4
+  - first:
+      213: -3384851836907530713
+    second: Ceilling 5
+  - first:
+      213: 1154172931332920291
+    second: Ceilling 6
+  - first:
+      213: 2367284793538611847
+    second: Ceilling Corner Right
+  - first:
+      213: -3045035118592350557
+    second: Wall Right 2
+  - first:
+      213: 5819261172656891645
+    second: Wall Left 3
+  - first:
+      213: 4875149696035976684
+    second: Grass Column
+  - first:
+      213: -1238425236092585604
+    second: Grass Inner Corner Single Left
+  - first:
+      213: -7462694872121021628
+    second: Grass Inner Corner Single Right
+  - first:
+      213: -8649080710150510132
+    second: Grass Inner Right 0
+  - first:
+      213: 8431889788541390536
+    second: Grass Inner Right 1
+  - first:
+      213: -8347415360498541242
+    second: Grass Inner Right 2
+  - first:
+      213: -6417547903155816113
+    second: Grass Inner Right 3
+  - first:
+      213: 86087062907998151
+    second: Wall Right 3
+  - first:
+      213: -7545992519252514578
+    second: Column 0
+  - first:
+      213: -7023598060100528414
+    second: Wall Left 4
+  - first:
+      213: 127270165964023084
+    second: Single
+  - first:
+      213: -2244366505045537586
+    second: Grass Inner Ceilling Right
+  - first:
+      213: 6726101097359754850
+    second: Grass Inner Ceilling Left
+  - first:
+      213: 3279760394729495120
+    second: Grass Inner Left 0
+  - first:
+      213: -7593517135564819433
+    second: Grass Inner Left 1
+  - first:
+      213: 4391802395186932935
+    second: Grass Inner Left 2
+  - first:
+      213: 8248085329672354009
+    second: Grass Inner Left 3
+  - first:
+      213: -5155908710862173708
+    second: Wall Right 4
+  - first:
+      213: 2980781284856646735
+    second: Column 1
+  - first:
+      213: 8794890305708265306
+    second: Wall Left 5
+  - first:
+      213: 2798837699247699682
+    second: Grass Inner Single Left
+  - first:
+      213: 4695564268208285656
+    second: Grass Single 0
+  - first:
+      213: 471120573271744220
+    second: Grass Single 1
+  - first:
+      213: -4611793160747541575
+    second: Grass Single 2
+  - first:
+      213: -1564724987289228850
+    second: Grass Single 3
+  - first:
+      213: -6643285386473233488
+    second: Grass Single 4
+  - first:
+      213: -4785107089736493618
+    second: Grass Inner Single Right
+  - first:
+      213: 6232152033078451366
+    second: Wall Right 5
+  - first:
+      213: -412776805576916385
+    second: Column 2
+  - first:
+      213: -3594985240605895755
+    second: Wall Left 6
+  - first:
+      213: 4189688448279574031
+    second: Grass Single Corner Left
+  - first:
+      213: 8781274872628131565
+    second: Grass Single 5
+  - first:
+      213: -6363209370637758458
+    second: Grass Single 6
+  - first:
+      213: 5888166619362827709
+    second: Grass Single Corner Right
+  - first:
+      213: 3768385856623974047
+    second: Grass Inner Single Center
+  - first:
+      213: -511571234682507464
+    second: Grass Inner Center
+  - first:
+      213: -804331911995009924
+    second: Wall Right 6
+  - first:
+      213: 7612640318316358774
+    second: Column Ceilling
+  - first:
+      213: -6653253851315827945
+    second: Tileset Grass_77
+  - first:
+      213: 8495978164385908553
+    second: Tileset Grass_78
+  - first:
+      213: -7587297754014374856
+    second: Tileset Grass_79
+  - first:
+      213: 7847855217663584777
+    second: Tileset Grass_80
+  - first:
+      213: -170824985238095833
+    second: Tileset Grass_81
+  - first:
+      213: -1048960475083132502
+    second: Tileset Grass_82
+  - first:
+      213: 4091141098429966303
+    second: Tileset Grass_83
+  - first:
+      213: 2963798626454782273
+    second: Grass Inner Corner Ceilling Left
+  - first:
+      213: 769397745646097216
+    second: Grass Inner Corner Ceilling Right
+  - first:
+      213: -1809864107041896233
+    second: Tileset Grass_86
+  - first:
+      213: 5834298985593828698
+    second: Tileset Grass_87
+  - first:
+      213: -3370092874230399470
+    second: Tileset Grass_88
+  - first:
+      213: 3230651901064623195
+    second: Tileset Grass_89
+  - first:
+      213: 5249493560598868316
+    second: Tileset Grass_90
+  - first:
+      213: -6962356630194592091
+    second: Tileset Grass_91
+  - first:
+      213: 2875281871131286607
+    second: Tileset Grass_92
+  - first:
+      213: -7790321496828843633
+    second: Tileset Grass_93
+  - first:
+      213: -4438345973142852240
+    second: Tileset Grass_94
+  - first:
+      213: -2793230717667684402
+    second: Tileset Grass_95
+  - first:
+      213: -9049746522499113949
+    second: Tileset Grass_96
+  - first:
+      213: -8389884795806433782
+    second: Tileset Grass_97
+  - first:
+      213: 4271450143209557429
+    second: Tileset Grass_98
+  - first:
+      213: 411307629509809090
+    second: Tileset Grass_99
+  - first:
+      213: -4609517318813314978
+    second: Tileset Grass_100
+  - first:
+      213: -9195202946366181871
+    second: Tileset Grass_101
+  - first:
+      213: -8619228980448025605
+    second: Tileset Grass_102
+  - first:
+      213: 4473762852616433287
+    second: Tileset Grass_103
+  - first:
+      213: 4385934906254987792
+    second: Tileset Grass_104
+  - first:
+      213: 5738013458973159547
+    second: Tileset Grass_105
+  - first:
+      213: 640045147830087066
+    second: Tileset Grass_106
+  - first:
+      213: -2214247051308429122
+    second: Tileset Grass_107
+  - first:
+      213: 7021454277129934488
+    second: Tileset Grass_108
+  - first:
+      213: -3110804446530998438
+    second: Tileset Grass_109
+  - first:
+      213: -7702280240561983104
+    second: Tileset Grass_110
+  - first:
+      213: -5491805646133394483
+    second: Tileset Grass_111
+  - first:
+      213: -4331690099630101449
+    second: Tileset Grass_112
+  - first:
+      213: 5157978580940412801
+    second: Tileset Grass_113
+  - first:
+      213: 2189259444292913728
+    second: Tileset Grass_114
+  - first:
+      213: 4579725530245134313
+    second: Tileset Grass_115
+  - first:
+      213: 7395318935245351110
+    second: Tileset Grass_116
+  - first:
+      213: 6668178230748650820
+    second: Tileset Grass_117
+  - first:
+      213: 8585910591595868059
+    second: Tileset Grass_118
+  - first:
+      213: 340376244208506954
+    second: Tileset Grass_119
+  - first:
+      213: -867709900889301921
+    second: Tileset Grass_120
+  - first:
+      213: -2277467969935542775
+    second: Tileset Grass_121
+  - first:
+      213: 1081014893516842524
+    second: Tileset Grass_122
+  - first:
+      213: -4120657192777054862
+    second: Tileset Grass_123
+  - first:
+      213: 4345799474344635412
+    second: Tileset Grass_124
+  - first:
+      213: -5573189226975726054
+    second: Tileset Grass_125
+  - first:
+      213: 6531176619714028197
+    second: Tileset Grass_126
+  - first:
+      213: -6575956051338743247
+    second: Tileset Grass_127
+  - first:
+      213: -4676925392132269180
+    second: Tileset Grass_128
+  - first:
+      213: 2502799342278230902
+    second: Tileset Grass_129
+  - first:
+      213: 183572279076041340
+    second: Tileset Grass_130
+  - first:
+      213: 982900211923849859
+    second: Tileset Grass_131
+  - first:
+      213: -6032347754494651914
+    second: Tileset Grass_132
+  - first:
+      213: 2968847177849722187
+    second: Tileset Grass_133
+  - first:
+      213: -4694824238854497732
+    second: Tileset Grass_134
+  - first:
+      213: -5141677778054551175
+    second: Tileset Grass_135
+  - first:
+      213: -1096926079972145717
+    second: Tileset Grass_136
+  - first:
+      213: 344754608889614946
+    second: Tileset Grass_137
+  - first:
+      213: -4816033829914132813
+    second: Tileset Grass_138
+  - first:
+      213: -8344678377726367534
+    second: Tileset Grass_139
+  - first:
+      213: -1242377287369675917
+    second: Tileset Grass_140
+  - first:
+      213: 2125257738185380095
+    second: Tileset Grass_141
+  - first:
+      213: 1299111279479871645
+    second: Tileset Grass_142
+  - first:
+      213: -3787615318788098460
+    second: Tileset Grass_143
+  - first:
+      213: 5112613981187209861
+    second: Tileset Grass_144
+  - first:
+      213: 2837080345180639961
+    second: Tileset Grass_145
+  - first:
+      213: 2860306134031111175
+    second: Tileset Grass_146
+  - first:
+      213: -7421691346976016563
+    second: Tileset Grass_147
+  - first:
+      213: 1362869500715021702
+    second: Tileset Grass_148
+  - first:
+      213: 425911468015121413
+    second: Tileset Grass_149
+  - first:
+      213: -134201264771312706
+    second: Tileset Grass_150
+  - first:
+      213: 1825930182386310892
+    second: Tileset Grass_151
+  - first:
+      213: 4173105705388755900
+    second: Tileset Grass_152
+  - first:
+      213: 9084218496386983163
+    second: Tileset Grass_93
+  - first:
+      213: -3373967977419435677
+    second: Tileset Grass_94
+  - first:
+      213: 7847447766692198954
+    second: Tileset Grass_95
+  - first:
+      213: -59329280642081088
+    second: Tileset Grass_96
+  - first:
+      213: -6104996575256408909
+    second: Tileset Grass_97
+  - first:
+      213: 2957763762930621781
+    second: Tileset Grass_98
+  - first:
+      213: -6508779535614397491
+    second: Tileset Grass_99
+  - first:
+      213: 8434554705397220086
+    second: Tileset Grass_100
+  - first:
+      213: 1575608875925718142
+    second: Tileset Grass_101
+  - first:
+      213: 7122394455589544683
+    second: Tileset Grass_102
+  - first:
+      213: -8904094424678124629
+    second: Tileset Grass_103
+  - first:
+      213: 5118169916208382307
+    second: Tileset Grass_104
+  - first:
+      213: 8268461142665047125
+    second: Tileset Grass_105
+  - first:
+      213: 6165592395661632776
+    second: Tileset Grass_106
+  - first:
+      213: 118103729812787771
+    second: Tileset Grass_107
+  - first:
+      213: -8277062256361764658
+    second: Tileset Grass_108
+  - first:
+      213: -3137696048384160549
+    second: Tileset Grass_109
+  - first:
+      213: -3848349915580085665
+    second: Tileset Grass_110
+  - first:
+      213: -6671472534715552561
+    second: Tileset Grass_111
+  - first:
+      213: -4891003070947646944
+    second: Tileset Grass_112
+  - first:
+      213: -6279930927191707122
+    second: Tileset Grass_113
+  - first:
+      213: 7210096470730870026
+    second: Tileset Grass_114
+  - first:
+      213: 6363668133918413686
+    second: Tileset Grass_115
+  - first:
+      213: -566151992312548993
+    second: Tileset Grass_116
+  - first:
+      213: -2515051026656711725
+    second: Tileset Grass_117
+  - first:
+      213: 3051107854365979536
+    second: Tileset Grass_118
+  - first:
+      213: -4403112963413479242
+    second: Tileset Grass_119
+  - first:
+      213: -4691879020945327511
+    second: Tileset Grass_120
+  - first:
+      213: 467242469483869028
+    second: Tileset Grass_121
+  - first:
+      213: -4156459157276156578
+    second: Tileset Grass_122
+  - first:
+      213: 4286407100319964317
+    second: Tileset Grass_123
+  - first:
+      213: 4250616696334048143
+    second: Tileset Grass_124
+  - first:
+      213: -9050589017161032927
+    second: Tileset Grass_125
+  - first:
+      213: -6442297563556695104
+    second: Tileset Grass_126
+  - first:
+      213: -8805367797893327871
+    second: Tileset Grass_127
+  - first:
+      213: 6204181302760477686
+    second: Tileset Grass_128
+  - first:
+      213: 8583099031000163403
+    second: Tileset Grass_129
+  - first:
+      213: 302491947278597575
+    second: Tileset Grass_130
+  - first:
+      213: 6606359666627658125
+    second: Tileset Grass_131
+  - first:
+      213: -4666565738883754730
+    second: Tileset Grass_132
+  - first:
+      213: 1797263838104929756
+    second: Tileset Grass_153
+  - first:
+      213: 7302259195707109252
+    second: Tileset Grass_154
+  - first:
+      213: -8231769194660217757
+    second: Tileset Grass_155
+  - first:
+      213: 6983381066686897683
+    second: Tileset Grass_156
+  - first:
+      213: -2724935191070167246
+    second: Tileset Grass_157
+  - first:
+      213: 3524677394936811137
+    second: Tileset Grass_158
+  - first:
+      213: 6051086375263040488
+    second: Tileset Grass_159
+  - first:
+      213: -4261891220706478570
+    second: Tileset Grass_160
+  - first:
+      213: 2993155878355815091
+    second: Tileset Grass_161
+  - first:
+      213: 5476326376844637207
+    second: Tileset Grass_162
+  - first:
+      213: -1089185483471638268
+    second: Tileset Grass_163
+  - first:
+      213: 159698732369916999
+    second: Tileset Grass_164
+  - first:
+      213: -3656223189395346192
+    second: Tileset Grass_165
+  - first:
+      213: 666200559845084153
+    second: Tileset Grass_166
+  - first:
+      213: -2257377042853180002
+    second: Tileset Grass_167
+  - first:
+      213: 8992332441638431156
+    second: Tileset Grass_168
+  - first:
+      213: 3223636426312102779
+    second: Tileset Grass_169
+  - first:
+      213: 7512877341828119439
+    second: Tileset Grass_170
+  - first:
+      213: 3125330248147074856
+    second: Tileset Grass_171
+  - first:
+      213: -5830682083731404605
+    second: Tileset Grass_172
+  - first:
+      213: 1740081342861965520
+    second: Tileset Grass_173
+  - first:
+      213: 3475979524490508957
+    second: Tileset Grass_174
+  - first:
+      213: -124934281399169749
+    second: Tileset Grass_175
+  - first:
+      213: 4187997608602051721
+    second: Tileset Grass_176
+  - first:
+      213: -7941009106556441074
+    second: Tileset Grass_177
+  - first:
+      213: -1068517459662195078
+    second: Tileset Grass_178
+  - first:
+      213: 5613540076328994246
+    second: Tileset Grass_179
+  - first:
+      213: 7712550963493275959
+    second: Tileset Grass_180
+  - first:
+      213: 1385929631920558748
+    second: Tileset Grass_181
+  - first:
+      213: 4213784664210356883
+    second: Tileset Grass_182
+  - first:
+      213: 1302346629320948160
+    second: Tileset Grass_183
+  - first:
+      213: 5564547957735711507
+    second: Tileset Grass_184
+  - first:
+      213: 5642676947373837683
+    second: Tileset Grass_185
+  - first:
+      213: 983628129530412121
+    second: Tileset Grass_186
+  - first:
+      213: 6238923249295942023
+    second: Tileset Grass_187
+  - first:
+      213: -4998569116754025848
+    second: Tileset Grass_188
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 512
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Grass Corner Left
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7680
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 126}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 126}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e0829402ea355c50800000000000000
+      internalID: 6653288766923505895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass 0
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 7680
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 126}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 126}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e9b3000adf5337c0800000000000000
+      internalID: -4092822246441895452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass 1
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 7680
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 126}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 126}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c560dbed51b85b0800000000000000
+      internalID: -5365170484683580414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass 2
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 7680
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 126}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 126}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5129cb0041e5f9e0800000000000000
+      internalID: -1588115628386344613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass 3
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 7680
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 126}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 126}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5846d7a7ae8c09370800000000000000
+      internalID: 8327376620410987653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass 4
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 7680
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 126}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 126}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 338d300ccf6e903a0800000000000000
+      internalID: -6698568997509277645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass 5
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 7680
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 126}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 126}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 102f227843e7f4fd0800000000000000
+      internalID: -2355525316020866559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass 6
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 7680
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 126}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 126}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c38e720451018110800000000000000
+      internalID: 1261290830971175878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Corner Right
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 7680
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 126}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 126}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c099e56c8eb64310800000000000000
+      internalID: 1389007045304881348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall Left 0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7168
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c932d6bb8d08000800000000000000
+      internalID: 36267096520498319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fill 0
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 7168
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 256}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f0aff05a7dba7b10800000000000000
+      internalID: 1980103319225344245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fill 1
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 7168
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 256}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23132d7afd7e9fd40800000000000000
+      internalID: 5618776957900697906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fill 2
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 7168
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 256}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52f9de4751ea4fb40800000000000000
+      internalID: 5473190854341271333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fill 3
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 7168
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 256}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b63ace67c32fc10800000000000000
+      internalID: 2085796058899901264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fill 4
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 7168
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 256}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44f01bcb554996420800000000000000
+      internalID: 2623791353878875972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fill 5
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 7168
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 256}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e618f9d4a3539df0800000000000000
+      internalID: -174703993040660764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fill 6
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 7168
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 256}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea50b45a0118ad20800000000000000
+      internalID: 3289898263862336227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall Right 0
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 7168
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d012a2627b45cffb0800000000000000
+      internalID: -4612718772738186995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Inner Wall Left
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 7168
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dade678021dd7660800000000000000
+      internalID: 7385288901598829267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall Left 1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6656
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3086a161ff9eea90800000000000000
+      internalID: -7282707688337276868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fill 7
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 6656
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1085196267dcffde0800000000000000
+      internalID: -1297092260322519039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fill 8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 6656
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9bb0327fea3a18a0800000000000000
+      internalID: -6333685125855790179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fill 9
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 6656
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ea516eb2271cf00800000000000000
+      internalID: 1135314113943416357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fill 10
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 6656
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e71001c2a53ee880800000000000000
+      internalID: -8579861266955233309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fill 11
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 6656
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b3f51a82ab16160800000000000000
+      internalID: 7017094378088774530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceilling 0
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 6656
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb659a025ef8c9660800000000000000
+      internalID: 7393942902493763260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceilling 1
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 6656
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a98e5449416af740800000000000000
+      internalID: 5186564888178100641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall Right 1
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 6656
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f585356f4251838d0800000000000000
+      internalID: -2866517914325657505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Inner Wall Right
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 6656
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c6e92f2b0ad7ad40800000000000000
+      internalID: 5595680803601901250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall Left 2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6144
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ba5feadd076af530800000000000000
+      internalID: 3889534537393199798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceilling Corner Left
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 6144
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e58ef7d7cd2c1bee0800000000000000
+      internalID: -1247001369550788514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceilling 2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 6144
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd5c0f1f439d2570800000000000000
+      internalID: 8443566844422151603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceilling 3
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 6144
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b122c8091f98e90800000000000000
+      internalID: -7022816540778947759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceilling 4
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 6144
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d5c05a088b130ab0800000000000000
+      internalID: -5043156886622255662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceilling 5
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 6144
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7265cc320379601d0800000000000000
+      internalID: -3384851836907530713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceilling 6
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 6144
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e3587d7a22740010800000000000000
+      internalID: 1154172931332920291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceilling Corner Right
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 6144
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a8d013af84ad020800000000000000
+      internalID: 2367284793538611847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall Right 2
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 6144
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a6a6b361bcddb5d0800000000000000
+      internalID: -3045035118592350557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall Left 3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5632
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: df6ef6b643b22c050800000000000000
+      internalID: 5819261172656891645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Column
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 5632
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 256, y: 126}
+        - {x: -256, y: 126}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce5f313a1d208a340800000000000000
+      internalID: 4875149696035976684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Inner Corner Single Left
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 5632
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7972d92fca30dee0800000000000000
+      internalID: -1238425236092585604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Inner Corner Single Right
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 5632
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44be8188d8e2f6890800000000000000
+      internalID: -7462694872121021628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Inner Right 0
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 5632
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc9abcd3bea48f780800000000000000
+      internalID: -8649080710150510132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Inner Right 1
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 5632
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cec04fa617140570800000000000000
+      internalID: 8431889788541390536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Inner Right 2
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 5632
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d58d4c4f5082c80800000000000000
+      internalID: -8347415360498541242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Inner Right 3
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 5632
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4938570f2a40f6a0800000000000000
+      internalID: -6417547903155816113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall Right 3
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 5632
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cf43644ab7d13100800000000000000
+      internalID: 86087062907998151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Column 0
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 5632
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee8e23cb8cf374790800000000000000
+      internalID: -7545992519252514578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall Left 4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5120
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6d596e6ca278e90800000000000000
+      internalID: -7023598060100528414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Single
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 5120
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 126}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 126}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c256ac8aa8724c100800000000000000
+      internalID: 127270165964023084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Inner Ceilling Right
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 5120
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: eccc9f80e886ad0e0800000000000000
+      internalID: -2244366505045537586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Inner Ceilling Left
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 5120
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2664e77cf49e75d50800000000000000
+      internalID: 6726101097359754850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Inner Left 0
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 5120
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05a1f3cb3bc048d20800000000000000
+      internalID: 3279760394729495120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Inner Left 1
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 5120
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71431dab5686e9690800000000000000
+      internalID: -7593517135564819433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Inner Left 2
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 5120
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cca3d87201d2fc30800000000000000
+      internalID: 4391802395186932935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Inner Left 3
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 5120
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d83b3838e5177270800000000000000
+      internalID: 8248085329672354009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall Right 4
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 5120
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f9c7ba38588278b0800000000000000
+      internalID: -5155908710862173708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Column 1
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 5120
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c430529ccdd5920800000000000000
+      internalID: 2980781284856646735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall Left 5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4608
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f844eb22abd0a70800000000000000
+      internalID: 8794890305708265306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Inner Single Left
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 4608
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e671affe0877d620800000000000000
+      internalID: 2798837699247699682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Single 0
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 4608
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 126}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 126}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d76292e2def92140800000000000000
+      internalID: 4695564268208285656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Single 1
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 4608
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 126}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 126}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde9d305aa1c98600800000000000000
+      internalID: 471120573271744220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Single 2
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 4608
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 126}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 126}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bb111cfd8e9fffb0800000000000000
+      internalID: -4611793160747541575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Single 3
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 4608
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 126}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 126}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9a2711aeaf84ae0800000000000000
+      internalID: -1564724987289228850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Single 4
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 4608
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 126}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 126}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b328bd732f4ec3a0800000000000000
+      internalID: -6643285386473233488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Inner Single Right
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 4608
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec59d085472e79db0800000000000000
+      internalID: -4785107089736493618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall Right 5
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 4608
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac9ed5314d0d7650800000000000000
+      internalID: 6232152033078451366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Column 2
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 4608
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52411caea5854af0800000000000000
+      internalID: -412776805576916385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall Left 6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4096
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b3d9e088fb0c1ec0800000000000000
+      internalID: -3594985240605895755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Single Corner Left
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 4096
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 126}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 126}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f06f24f1273c42a30800000000000000
+      internalID: 4189688448279574031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Single 5
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 4096
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 126}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 126}
+      tessellationDetail: 0
+      bones: []
+      spriteID: de63012b8fa5dd970800000000000000
+      internalID: 8781274872628131565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Single 6
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 4096
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 126}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 126}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60013b78ac651b7a0800000000000000
+      internalID: -6363209370637758458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Single Corner Right
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 4096
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 126}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 126}
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd1f6de758f6b150800000000000000
+      internalID: 5888166619362827709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Inner Single Center
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 4096
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f969da888fefb4430800000000000000
+      internalID: 3768385856623974047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Inner Center
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 4096
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83fe0772ca886e8f0800000000000000
+      internalID: -511571234682507464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall Right 6
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 4096
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c74d608336076d4f0800000000000000
+      internalID: -804331911995009924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Column Ceilling
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 4096
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c2018390885a960800000000000000
+      internalID: 7612640318316358774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Grass_77
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 256}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b02d76fd4eaa3a0800000000000000
+      internalID: -6653253851315827945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Grass_78
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 256}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94782bb7027c7e570800000000000000
+      internalID: 8495978164385908553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Grass_79
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 256}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 834aad654e084b690800000000000000
+      internalID: -7587297754014374856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Grass_80
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 256}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90aa881adbe29ec60800000000000000
+      internalID: 7847855217663584777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Grass_81
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 256}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7283f1cb49b11adf0800000000000000
+      internalID: -170824985238095833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Grass_82
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 256}
+        - {x: -256, y: -255}
+        - {x: -250, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa1be3b61085171f0800000000000000
+      internalID: -1048960475083132502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Grass_83
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 256}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd76be93727a6c830800000000000000
+      internalID: 4091141098429966303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Inner Corner Ceilling Left
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 141c0abd527812920800000000000000
+      internalID: 2963798626454782273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Inner Corner Ceilling Right
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -256}
+        - {x: -256, y: 256}
+        - {x: 256, y: 256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 043d8385c237daa00800000000000000
+      internalID: 769397745646097216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Grass_86
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 256}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d8c9080f2212e6e0800000000000000
+      internalID: -1809864107041896233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Grass_87
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 256}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a55fdb5140897f050800000000000000
+      internalID: 5834298985593828698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Grass_88
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 256}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21efb6be2660b31d0800000000000000
+      internalID: -3370092874230399470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Grass_89
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 256}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b54b5eb89c495dc20800000000000000
+      internalID: 3230651901064623195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Grass_90
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 256}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5132329492f9d840800000000000000
+      internalID: 5249493560598868316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Grass_91
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 256}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a66aa1788db06f90800000000000000
+      internalID: -6962356630194592091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Grass_92
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 256}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c96edb0ad07e720800000000000000
+      internalID: 2875281871131286607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

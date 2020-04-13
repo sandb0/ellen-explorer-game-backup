@@ -1,0 +1,527 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb28f95b461da941b7798ac3e444148, type: 3}
+  m_Name: Grass Tile
+  m_EditorClassIdentifier: 
+  defaultTileSprite: {fileID: 1918807701877941946, guid: 9b2b39f6ef0234947944d7910e9f6670,
+    type: 3}
+  defaultTileGameObject: {fileID: 0}
+  defaultTileColliderType: 1
+  rules:
+  - tileSprites:
+    - {fileID: -3869310853854476529, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: 8979864409892088902, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: 5214692447809866391, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: 3014412281925490944, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: 1860544124299888106, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: -3135314978324183498, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: -4868432154146220168, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    tileGameObject: {fileID: 0}
+    tileColliderType: 1
+    animationSpeed: 1
+    perlinNoiseScale: 0.5
+    randomSpriteRotationType: 0
+    nextTileSelectionType: 0
+    spriteOutputType: 1
+    neighborsRuleCode: 01000000010000000200000002000000
+    neighborsBoxesPositionOnMatrix:
+    - {x: -1, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    - {x: 0, y: 1, z: 0}
+    - {x: 0, y: -1, z: 0}
+  - tileSprites:
+    - {fileID: -1282612798645634942, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    tileGameObject: {fileID: 0}
+    tileColliderType: 1
+    animationSpeed: 1
+    perlinNoiseScale: 0.5
+    randomSpriteRotationType: 0
+    nextTileSelectionType: 0
+    spriteOutputType: 0
+    neighborsRuleCode: 02000000020000000200000001000000
+    neighborsBoxesPositionOnMatrix:
+    - {x: 0, y: 1, z: 0}
+    - {x: 0, y: -1, z: 0}
+    - {x: -1, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+  - tileSprites:
+    - {fileID: 5352192993678620033, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    tileGameObject: {fileID: 0}
+    tileColliderType: 1
+    animationSpeed: 1
+    perlinNoiseScale: 0.5
+    randomSpriteRotationType: 0
+    nextTileSelectionType: 0
+    spriteOutputType: 0
+    neighborsRuleCode: 02000000020000000200000001000000
+    neighborsBoxesPositionOnMatrix:
+    - {x: 0, y: 1, z: 0}
+    - {x: 0, y: -1, z: 0}
+    - {x: 1, y: 0, z: 0}
+    - {x: -1, y: 0, z: 0}
+  - tileSprites:
+    - {fileID: 6937853632240854402, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    tileGameObject: {fileID: 0}
+    tileColliderType: 1
+    animationSpeed: 1
+    perlinNoiseScale: 0.5
+    randomSpriteRotationType: 0
+    nextTileSelectionType: 0
+    spriteOutputType: 0
+    neighborsRuleCode: 02000000020000000200000001000000
+    neighborsBoxesPositionOnMatrix:
+    - {x: 0, y: 1, z: 0}
+    - {x: -1, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    - {x: 0, y: -1, z: 0}
+  - tileSprites:
+    - {fileID: -1922700812032389931, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: -168248740583242628, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: -566041618039796478, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    tileGameObject: {fileID: 0}
+    tileColliderType: 1
+    animationSpeed: 1
+    perlinNoiseScale: 0.5
+    randomSpriteRotationType: 0
+    nextTileSelectionType: 0
+    spriteOutputType: 1
+    neighborsRuleCode: 02000000010000000100000002000000
+    neighborsBoxesPositionOnMatrix:
+    - {x: -1, y: 0, z: 0}
+    - {x: 0, y: 1, z: 0}
+    - {x: 0, y: -1, z: 0}
+    - {x: 1, y: 0, z: 0}
+  - tileSprites:
+    - {fileID: -8401850433715117816, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    tileGameObject: {fileID: 0}
+    tileColliderType: 1
+    animationSpeed: 1
+    perlinNoiseScale: 0.5
+    randomSpriteRotationType: 0
+    nextTileSelectionType: 0
+    spriteOutputType: 0
+    neighborsRuleCode: 02000000020000000200000001000000
+    neighborsBoxesPositionOnMatrix:
+    - {x: 0, y: -1, z: 0}
+    - {x: -1, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    - {x: 0, y: 1, z: 0}
+  - tileSprites:
+    - {fileID: 7554481604666009311, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: -4052286286075085803, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: 8321714878107517632, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: -6581504073552197220, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: -4531690120383335396, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: -6617579431134654521, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: 1328641429955694069, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    tileGameObject: {fileID: 0}
+    tileColliderType: 1
+    animationSpeed: 1
+    perlinNoiseScale: 0.5
+    randomSpriteRotationType: 0
+    nextTileSelectionType: 0
+    spriteOutputType: 1
+    neighborsRuleCode: 01000000010000000200000001000000
+    neighborsBoxesPositionOnMatrix:
+    - {x: -1, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    - {x: 0, y: 1, z: 0}
+    - {x: 0, y: -1, z: 0}
+  - tileSprites:
+    - {fileID: -3886991889690449406, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    tileGameObject: {fileID: 0}
+    tileColliderType: 1
+    animationSpeed: 1
+    perlinNoiseScale: 0.5
+    randomSpriteRotationType: 0
+    nextTileSelectionType: 0
+    spriteOutputType: 0
+    neighborsRuleCode: 02000000020000000100000001000000
+    neighborsBoxesPositionOnMatrix:
+    - {x: -1, y: 0, z: 0}
+    - {x: 0, y: 1, z: 0}
+    - {x: 1, y: 0, z: 0}
+    - {x: 0, y: -1, z: 0}
+  - tileSprites:
+    - {fileID: 4295226749695926648, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    tileGameObject: {fileID: 0}
+    tileColliderType: 1
+    animationSpeed: 1
+    perlinNoiseScale: 0.5
+    randomSpriteRotationType: 0
+    nextTileSelectionType: 0
+    spriteOutputType: 0
+    neighborsRuleCode: 02000000020000000100000001000000
+    neighborsBoxesPositionOnMatrix:
+    - {x: 0, y: 1, z: 0}
+    - {x: 1, y: 0, z: 0}
+    - {x: 0, y: -1, z: 0}
+    - {x: -1, y: 0, z: 0}
+  - tileSprites:
+    - {fileID: 247503291144586257, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    tileGameObject: {fileID: 0}
+    tileColliderType: 1
+    animationSpeed: 1
+    perlinNoiseScale: 0.5
+    randomSpriteRotationType: 0
+    nextTileSelectionType: 0
+    spriteOutputType: 0
+    neighborsRuleCode: 0200000001000000010000000100000002000000
+    neighborsBoxesPositionOnMatrix:
+    - {x: -1, y: 0, z: 0}
+    - {x: 0, y: 1, z: 0}
+    - {x: 0, y: -1, z: 0}
+    - {x: 1, y: 0, z: 0}
+    - {x: 1, y: 1, z: 0}
+  - tileSprites:
+    - {fileID: -2627059921939925698, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    tileGameObject: {fileID: 0}
+    tileColliderType: 1
+    animationSpeed: 1
+    perlinNoiseScale: 0.5
+    randomSpriteRotationType: 0
+    nextTileSelectionType: 0
+    spriteOutputType: 0
+    neighborsRuleCode: 0200000001000000010000000100000002000000
+    neighborsBoxesPositionOnMatrix:
+    - {x: 1, y: 0, z: 0}
+    - {x: 0, y: 1, z: 0}
+    - {x: 0, y: -1, z: 0}
+    - {x: -1, y: 0, z: 0}
+    - {x: -1, y: 1, z: 0}
+  - tileSprites:
+    - {fileID: -4435661164258056124, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: 2794154004684953918, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: -7538043728003956802, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: 7701791312499952943, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: -7401250462661055777, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: -2208743348344042782, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: 4190812720828203058, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    tileGameObject: {fileID: 0}
+    tileColliderType: 1
+    animationSpeed: 1
+    perlinNoiseScale: 0.5
+    randomSpriteRotationType: 0
+    nextTileSelectionType: 0
+    spriteOutputType: 1
+    neighborsRuleCode: 01000000010000000200000001000000
+    neighborsBoxesPositionOnMatrix:
+    - {x: 0, y: 1, z: 0}
+    - {x: 0, y: -1, z: 0}
+    - {x: -1, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+  - tileSprites:
+    - {fileID: -2238289603660276647, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: 2840778069395328125, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: 1251578332236870696, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: 8720430066628258908, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: 2240526712462342531, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: 6005222580067410818, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: 5127542291509761558, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    tileGameObject: {fileID: 0}
+    tileColliderType: 1
+    animationSpeed: 1
+    perlinNoiseScale: 0.5
+    randomSpriteRotationType: 0
+    nextTileSelectionType: 0
+    spriteOutputType: 1
+    neighborsRuleCode: 01000000010000000100000002000000
+    neighborsBoxesPositionOnMatrix:
+    - {x: 0, y: 1, z: 0}
+    - {x: 0, y: -1, z: 0}
+    - {x: -1, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+  - tileSprites:
+    - {fileID: -634362727068254099, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    tileGameObject: {fileID: 0}
+    tileColliderType: 1
+    animationSpeed: 1
+    perlinNoiseScale: 0.5
+    randomSpriteRotationType: 0
+    nextTileSelectionType: 0
+    spriteOutputType: 0
+    neighborsRuleCode: 010000000100000002000000020000000100000002000000
+    neighborsBoxesPositionOnMatrix:
+    - {x: -1, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    - {x: 0, y: -1, z: 0}
+    - {x: 1, y: 1, z: 0}
+    - {x: 0, y: 1, z: 0}
+    - {x: -1, y: 1, z: 0}
+  - tileSprites:
+    - {fileID: -8561266585176963899, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    tileGameObject: {fileID: 0}
+    tileColliderType: 1
+    animationSpeed: 1
+    perlinNoiseScale: 0.5
+    randomSpriteRotationType: 0
+    nextTileSelectionType: 0
+    spriteOutputType: 0
+    neighborsRuleCode: 010000000100000001000000010000000200000002000000
+    neighborsBoxesPositionOnMatrix:
+    - {x: 1, y: 0, z: 0}
+    - {x: -1, y: 0, z: 0}
+    - {x: 0, y: -1, z: 0}
+    - {x: 0, y: 1, z: 0}
+    - {x: 1, y: 1, z: 0}
+    - {x: -1, y: 1, z: 0}
+  - tileSprites:
+    - {fileID: 9068015034492912583, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    tileGameObject: {fileID: 0}
+    tileColliderType: 1
+    animationSpeed: 1
+    perlinNoiseScale: 0.5
+    randomSpriteRotationType: 0
+    nextTileSelectionType: 0
+    spriteOutputType: 0
+    neighborsRuleCode: 0200000002000000010000000200000001000000
+    neighborsBoxesPositionOnMatrix:
+    - {x: 0, y: -1, z: 0}
+    - {x: -1, y: 0, z: 0}
+    - {x: 0, y: 1, z: 0}
+    - {x: 1, y: 1, z: 0}
+    - {x: -1, y: -1, z: 0}
+  - tileSprites:
+    - {fileID: -2204259891489919506, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    tileGameObject: {fileID: 0}
+    tileColliderType: 1
+    animationSpeed: 1
+    perlinNoiseScale: 0.5
+    randomSpriteRotationType: 0
+    nextTileSelectionType: 0
+    spriteOutputType: 0
+    neighborsRuleCode: 0200000002000000010000000200000001000000
+    neighborsBoxesPositionOnMatrix:
+    - {x: 1, y: 0, z: 0}
+    - {x: 0, y: -1, z: 0}
+    - {x: 0, y: 1, z: 0}
+    - {x: -1, y: 1, z: 0}
+    - {x: 1, y: -1, z: 0}
+  - tileSprites:
+    - {fileID: -5818941979361047731, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    tileGameObject: {fileID: 0}
+    tileColliderType: 1
+    animationSpeed: 1
+    perlinNoiseScale: 0.5
+    randomSpriteRotationType: 0
+    nextTileSelectionType: 0
+    spriteOutputType: 0
+    neighborsRuleCode: 02000000020000000100000001000000
+    neighborsBoxesPositionOnMatrix:
+    - {x: 1, y: 1, z: 0}
+    - {x: 1, y: -1, z: 0}
+    - {x: 0, y: -1, z: 0}
+    - {x: -1, y: -1, z: 0}
+  - tileSprites:
+    - {fileID: 5549761364065673552, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    tileGameObject: {fileID: 0}
+    tileColliderType: 1
+    animationSpeed: 1
+    perlinNoiseScale: 0.5
+    randomSpriteRotationType: 0
+    nextTileSelectionType: 0
+    spriteOutputType: 0
+    neighborsRuleCode: 02000000020000000100000001000000
+    neighborsBoxesPositionOnMatrix:
+    - {x: -1, y: 1, z: 0}
+    - {x: -1, y: -1, z: 0}
+    - {x: 0, y: -1, z: 0}
+    - {x: 1, y: -1, z: 0}
+  - tileSprites:
+    - {fileID: -106900629362283215, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    tileGameObject: {fileID: 0}
+    tileColliderType: 1
+    animationSpeed: 1
+    perlinNoiseScale: 0.5
+    randomSpriteRotationType: 0
+    nextTileSelectionType: 0
+    spriteOutputType: 0
+    neighborsRuleCode: 020000000200000002000000020000000100000001000000
+    neighborsBoxesPositionOnMatrix:
+    - {x: -1, y: 0, z: 0}
+    - {x: -1, y: -1, z: 0}
+    - {x: 0, y: -1, z: 0}
+    - {x: 1, y: 1, z: 0}
+    - {x: 0, y: 1, z: 0}
+    - {x: 1, y: 0, z: 0}
+  - tileSprites:
+    - {fileID: 8434630411125806507, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    tileGameObject: {fileID: 0}
+    tileColliderType: 1
+    animationSpeed: 1
+    perlinNoiseScale: 0.5
+    randomSpriteRotationType: 0
+    nextTileSelectionType: 0
+    spriteOutputType: 0
+    neighborsRuleCode: 020000000200000002000000010000000100000002000000
+    neighborsBoxesPositionOnMatrix:
+    - {x: 1, y: 0, z: 0}
+    - {x: 1, y: -1, z: 0}
+    - {x: 0, y: -1, z: 0}
+    - {x: 0, y: 1, z: 0}
+    - {x: -1, y: 0, z: 0}
+    - {x: -1, y: 1, z: 0}
+  - tileSprites:
+    - {fileID: 8681688869208777346, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: -4531108694264437572, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: 209861807068386587, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: -2224288138361603025, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: -5378046649112382223, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    tileGameObject: {fileID: 0}
+    tileColliderType: 1
+    animationSpeed: 1
+    perlinNoiseScale: 0.5
+    randomSpriteRotationType: 0
+    nextTileSelectionType: 0
+    spriteOutputType: 0
+    neighborsRuleCode: 0200000001000000010000000100000002000000
+    neighborsBoxesPositionOnMatrix:
+    - {x: 0, y: -1, z: 0}
+    - {x: 1, y: 0, z: 0}
+    - {x: -1, y: 0, z: 0}
+    - {x: 0, y: 1, z: 0}
+    - {x: 1, y: 1, z: 0}
+  - tileSprites:
+    - {fileID: 5546125155121638862, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: 7976075012827114995, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: -8239919332253830784, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: -6942717885061724228, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: 5546125155121638862, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    tileGameObject: {fileID: 0}
+    tileColliderType: 1
+    animationSpeed: 1
+    perlinNoiseScale: 0.5
+    randomSpriteRotationType: 0
+    nextTileSelectionType: 0
+    spriteOutputType: 0
+    neighborsRuleCode: 0100000001000000010000000200000002000000
+    neighborsBoxesPositionOnMatrix:
+    - {x: 0, y: 1, z: 0}
+    - {x: -1, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    - {x: 0, y: -1, z: 0}
+    - {x: -1, y: 1, z: 0}
+  - tileSprites:
+    - {fileID: 2084501343829660596, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    tileGameObject: {fileID: 0}
+    tileColliderType: 2
+    animationSpeed: 1
+    perlinNoiseScale: 0.5
+    randomSpriteRotationType: 0
+    nextTileSelectionType: 0
+    spriteOutputType: 0
+    neighborsRuleCode: 02000000020000000100000001000000
+    neighborsBoxesPositionOnMatrix:
+    - {x: -1, y: 0, z: 0}
+    - {x: 0, y: -1, z: 0}
+    - {x: 0, y: 1, z: 0}
+    - {x: 1, y: 0, z: 0}
+  - tileSprites:
+    - {fileID: -1175342085072937684, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    tileGameObject: {fileID: 0}
+    tileColliderType: 2
+    animationSpeed: 1
+    perlinNoiseScale: 0.5
+    randomSpriteRotationType: 0
+    nextTileSelectionType: 0
+    spriteOutputType: 0
+    neighborsRuleCode: 01000000010000000200000002000000
+    neighborsBoxesPositionOnMatrix:
+    - {x: 0, y: 1, z: 0}
+    - {x: -1, y: 0, z: 0}
+    - {x: 0, y: -1, z: 0}
+    - {x: 1, y: 0, z: 0}
+  - tileSprites:
+    - {fileID: 929895363805513988, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: -3944082893500521469, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: 350456080078125665, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: 3619025754316855383, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: 4050284459050298581, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: 3159969852821607073, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: -8844669507599057790, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    tileGameObject: {fileID: 0}
+    tileColliderType: 2
+    animationSpeed: 1
+    perlinNoiseScale: 0.5
+    randomSpriteRotationType: 0
+    nextTileSelectionType: 0
+    spriteOutputType: 1
+    neighborsRuleCode: 01000000010000000100000002000000
+    neighborsBoxesPositionOnMatrix:
+    - {x: -1, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    - {x: 0, y: 1, z: 0}
+    - {x: 0, y: -1, z: 0}
+  - tileSprites:
+    - {fileID: -4531108694264437572, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: 209861807068386587, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: -2224288138361603025, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: -5378046649112382223, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    tileGameObject: {fileID: 0}
+    tileColliderType: 1
+    animationSpeed: 1
+    perlinNoiseScale: 0.5
+    randomSpriteRotationType: 0
+    nextTileSelectionType: 0
+    spriteOutputType: 1
+    neighborsRuleCode: 0100000001000000010000000100000002000000
+    neighborsBoxesPositionOnMatrix:
+    - {x: 0, y: 1, z: 0}
+    - {x: 0, y: -1, z: 0}
+    - {x: -1, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    - {x: 1, y: 1, z: 0}
+  - tileSprites:
+    - {fileID: -2232854433915198666, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: 7976075012827114995, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: -8239919332253830784, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: -6942717885061724228, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    tileGameObject: {fileID: 0}
+    tileColliderType: 1
+    animationSpeed: 1
+    perlinNoiseScale: 0.5
+    randomSpriteRotationType: 0
+    nextTileSelectionType: 0
+    spriteOutputType: 1
+    neighborsRuleCode: 0100000001000000010000000100000002000000
+    neighborsBoxesPositionOnMatrix:
+    - {x: 0, y: 1, z: 0}
+    - {x: 0, y: -1, z: 0}
+    - {x: -1, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    - {x: -1, y: 1, z: 0}
+  - tileSprites:
+    - {fileID: -4013870114788639045, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: 8500180218769451004, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: -8180998256380386487, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: -3274056527488068681, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: -3932606123113709883, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: -9161311628635337421, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: 1211028411420177341, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: -7762604283655690273, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: 4836549508208671071, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: 8683627204173158398, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: 414936046162736983, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    - {fileID: 6188287665996007263, guid: 9b2b39f6ef0234947944d7910e9f6670, type: 3}
+    tileGameObject: {fileID: 0}
+    tileColliderType: 0
+    animationSpeed: 1
+    perlinNoiseScale: 0.5
+    randomSpriteRotationType: 0
+    nextTileSelectionType: 0
+    spriteOutputType: 1
+    neighborsRuleCode: 01000000010000000100000001000000
+    neighborsBoxesPositionOnMatrix:
+    - {x: 0, y: 1, z: 0}
+    - {x: -1, y: 0, z: 0}
+    - {x: 0, y: -1, z: 0}
+    - {x: 1, y: 0, z: 0}
